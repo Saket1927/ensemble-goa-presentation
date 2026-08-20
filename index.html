@@ -450,6 +450,61 @@ body {
   transform: scale(1.04);
 }
 
+/* 3-Photo Custom Grid for Slide 15 */
+.trio-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 320px 210px;
+  gap: 14px;
+  width: 100%;
+  height: 550px;
+}
+
+.trio-photo-hero {
+  grid-column: span 2;
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  background: var(--bg-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.trio-photo-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.trio-photo-hero img:hover {
+  transform: scale(1.02);
+}
+
+.trio-photo-sub {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  background: var(--bg-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.trio-photo-sub img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.trio-photo-sub img:hover {
+  transform: scale(1.04);
+}
+
 /* Video Player */
 .video-player-wrap {
   width: 100%;
@@ -902,8 +957,11 @@ body {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .hero-image-frame, .dual-photo-frame, .quad-photo-grid {
+  .hero-image-frame, .dual-photo-frame, .quad-photo-grid, .trio-photo-grid {
     height: 380px;
+  }
+  .trio-photo-grid {
+    grid-template-rows: 220px 140px;
   }
   .deck-viewport {
     padding: 16px 20px;
@@ -1588,7 +1646,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 10: EVENT FLOW 4 - MEHNDI CEREMONY & HI-TEA (CHANGED FROM HALDI) -->
+  <!-- SLIDE 10: EVENT FLOW 4 - MEHNDI CEREMONY & HI-TEA -->
   <section class="slide" id="slide-10" data-day="Event Flow" data-title="Mehndi Ceremony & Hi-Tea">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -1655,7 +1713,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 11: EVENT FLOW 5 - FORMAL RECEPTION (OCEANFRONT PHOTO & 3-TIER CAKE) -->
+  <!-- SLIDE 11: EVENT FLOW 5 - FORMAL OCEANFRONT RECEPTION -->
   <section class="slide" id="slide-11" data-day="Event Flow" data-title="Formal Oceanfront Reception">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -1879,7 +1937,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 15: EVENT FLOW 9 - MANDAP VIDHI & PHERAS -->
+  <!-- SLIDE 15: EVENT FLOW 9 - MANDAP VIDHI & OCEANFRONT PHERAS (UPDATED WITH OCEAN FRONT IMAGE) -->
   <section class="slide" id="slide-15" data-day="Event Flow" data-title="Mandap Vidhi & Pheras">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -1898,38 +1956,42 @@ body {
 
         <div class="feature-list">
           <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-water"></i></div>
+            <div class="feature-row-content">
+              <h4>Beachfront 4-Pillar Oceanfront Mandap</h4>
+              <p>Exotic floral canopy, mirrored havan kund, decorated guest chairs, and oceanfront floral aisle.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-heart"></i></div>
+            <div class="feature-row-content">
+              <h4>Lotus Varmalas & Ritual Samagri</h4>
+              <p>Handcrafted fresh lotus garland exchange, sacred agni havan, and Vedic priest coordination.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
             <div class="feature-icon-circle"><i class="fa-solid fa-bell"></i></div>
             <div class="feature-row-content">
               <h4>Ceremonial Phera Bells</h4>
-              <p>Handheld brass bells for guests to ring during auspicious Vedic mantras.</p>
-            </div>
-          </div>
-
-          <div class="feature-row">
-            <div class="feature-icon-circle"><i class="fa-solid fa-water"></i></div>
-            <div class="feature-row-content">
-              <h4>Beachfront 4-Pillar Mandap</h4>
-              <p>Exotic floral canopy, mirrored havan kund, decorated guest chairs, and floral aisle.</p>
-            </div>
-          </div>
-
-          <div class="feature-row">
-            <div class="feature-icon-circle"><i class="fa-solid fa-sliders"></i></div>
-            <div class="feature-row-content">
-              <h4>Vidhi Sound & Ambient Lights</h4>
-              <p>Dedicated lapel mics, acoustic speakers + warm golden illumination for mandap and lawn.</p>
+              <p>Handheld brass bells for guests to ring in unison during the auspicious 7 Vedic pheras.</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="widescreen-right">
-        <div class="dual-photo-grid">
-          <div class="dual-photo-frame">
-            <img src="assets/lotus-varmala.jpg" alt="Lotus Varmala" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-heart"></i> Lotus Varmala</div>
+        <div class="trio-photo-grid">
+          <div class="trio-photo-hero">
+            <img src="assets/beach-mandap.jpg" alt="Oceanfront Mandap on the Beach" onclick="openLightbox(this.src)">
+            <div class="image-badge"><i class="fa-solid fa-water"></i> Oceanfront Sunset Beach Mandap</div>
           </div>
-          <div class="dual-photo-frame">
+          <div class="trio-photo-sub">
+            <img src="assets/lotus-varmala.jpg" alt="Lotus Varmala" onclick="openLightbox(this.src)">
+            <div class="image-badge"><i class="fa-solid fa-heart"></i> Lotus Varmalas</div>
+          </div>
+          <div class="trio-photo-sub">
             <img src="assets/phera-bells.jpg" alt="Phera Bells" onclick="openLightbox(this.src)">
             <div class="image-badge"><i class="fa-solid fa-bell"></i> Phera Bells</div>
           </div>
@@ -2483,7 +2545,7 @@ const slideData = [
   { no: 12, day: "Event Flow", title: "Late Night After Party" },
   { no: 13, day: "Event Flow", title: "Ganpati Sthapna Puja" },
   { no: 14, day: "Event Flow", title: "The Grand Royal Baraat" },
-  { no: 15, day: "Event Flow", title: "Mandap Vidhi & Pheras" },
+  { no: 15, day: "Event Flow", title: "Mandap Vidhi & Oceanfront Pheras" },
   { no: 16, day: "Giveaways", title: "Royal Safas & Ceremony Favors" },
   { no: 17, day: "Giveaways", title: "Custom Room Hampers" },
   { no: 18, day: "Services", title: "Hospitality Desks & RSVP" },
