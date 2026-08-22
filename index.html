@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ms. Ayushi Desai & Mr. Amit D · Wedding Proposal & Cost Presentation | Ensemble Events</title>
+<title>The Wedding Proposal · Ms. Ayushi Desai & Mr. Amit D | Ensemble Events</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -119,7 +119,7 @@ body {
 
 .nav-progress-fill {
   height: 100%;
-  width: 3%;
+  width: 2.5%;
   background: var(--palm-green);
   border-radius: 10px;
   transition: width 0.3s ease;
@@ -223,7 +223,7 @@ body {
   overflow: hidden;
 }
 
-/* Clean Eyebrow Row */
+/* Eyebrow Row */
 .eyebrow-row {
   display: flex;
   align-items: center;
@@ -323,60 +323,93 @@ body {
   line-height: 1.45;
 }
 
-/* Cost Summary Sheet Card inside Slide */
-.cost-summary-card {
+/* Dedicated Cost Summary Sheet Design */
+.cost-sheet-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
   background: #FFFFFF;
   border: 1.5px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 16px 20px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
-  margin-top: 14px;
-  border-left: 4px solid var(--palm-green);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.05);
 }
 
-.cost-card-header {
+.cost-sheet-header {
+  background: var(--bg-surface);
+  padding: 20px 28px;
+  border-bottom: 2px solid var(--border-subtle);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 
-.cost-card-title {
+.cost-sheet-title {
   font-family: 'Cinzel', serif;
-  font-size: 12.5px;
+  font-size: 16px;
   font-weight: 800;
   color: var(--ink-primary);
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
-.cost-card-total {
-  font-family: 'Cinzel', serif;
-  font-size: 15px;
-  font-weight: 800;
+.cost-sheet-subtitle {
+  font-size: 12px;
+  font-weight: 700;
   color: var(--terracotta);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 2px;
 }
 
-.cost-table-mini {
+.cost-sheet-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
 }
 
-.cost-table-mini td {
-  padding: 5px 0;
+.cost-sheet-table th {
+  background: var(--bg-surface);
+  padding: 12px 28px;
+  font-family: 'Cinzel', serif;
+  font-size: 11.5px;
+  font-weight: 800;
   color: var(--ink-secondary);
-  border-bottom: 1px dashed rgba(0,0,0,0.05);
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.cost-table-mini td.price {
+.cost-sheet-table td {
+  padding: 12px 28px;
+  font-size: 13.5px;
+  color: var(--ink-primary);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.cost-sheet-table td.price {
   text-align: right;
   font-weight: 700;
-  color: var(--ink-primary);
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
 }
 
-/* Clean Chips */
+.cost-sheet-total-row {
+  background: var(--palm-light);
+  font-weight: 800;
+}
+
+.cost-sheet-total-row td {
+  padding: 16px 28px;
+  font-size: 15px;
+  color: var(--palm-green);
+  border-top: 2px solid var(--palm-green);
+  border-bottom: none;
+}
+
+.cost-sheet-total-row td.price {
+  font-size: 18px;
+  color: var(--palm-green);
+}
+
+/* Chips */
 .chip-group {
   display: flex;
   flex-wrap: wrap;
@@ -397,7 +430,7 @@ body {
   gap: 6px;
 }
 
-/* Hero Image Frames */
+/* Image & Media Frames */
 .hero-image-frame {
   position: relative;
   width: 100%;
@@ -438,7 +471,6 @@ body {
   gap: 6px;
 }
 
-/* Multi-Photo Grids */
 .dual-photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -500,7 +532,7 @@ body {
   transform: scale(1.04);
 }
 
-/* 4 Option Showcase Cards */
+/* 4 Options Grid */
 .options-grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -528,7 +560,7 @@ body {
 
 .option-card-img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
   display: block;
   cursor: pointer;
@@ -599,8 +631,8 @@ body {
 /* Presentation Index Grid */
 .index-card-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
   margin-top: 20px;
 }
 
@@ -608,13 +640,13 @@ body {
   background: #FFFFFF;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 18px;
+  padding: 20px;
   cursor: pointer;
   transition: all 0.25s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 135px;
+  min-height: 145px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03);
 }
 
@@ -633,114 +665,16 @@ body {
 
 .index-nav-title {
   font-family: 'Cinzel', serif;
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--ink-primary);
   margin: 3px 0;
 }
 
 .index-nav-desc {
-  font-size: 11px;
+  font-size: 11.5px;
   color: var(--ink-secondary);
-  line-height: 1.4;
-}
-
-/* Centered Journey Itinerary */
-.journey-container {
-  width: 100%;
-  max-width: 1360px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.journey-days-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  margin-top: 20px;
-  text-align: left;
-}
-
-.journey-day-card {
-  background: #FFFFFF;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 24px 28px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
-  position: relative;
-}
-
-.journey-day-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 28px;
-  right: 28px;
-  height: 4px;
-  background: var(--palm-green);
-  border-radius: 4px 4px 0 0;
-}
-
-.journey-day-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
-.journey-day-title {
-  font-family: 'Cinzel', serif;
-  font-size: 17px;
-  font-weight: 800;
-  color: var(--ink-primary);
-}
-
-.journey-day-date {
-  font-family: 'Cinzel', serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--terracotta);
-  letter-spacing: 1px;
-}
-
-.journey-timeline-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.journey-item {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-
-.journey-time-pill {
-  background: var(--bg-muted);
-  padding: 3px 8px;
-  border-radius: 10px;
-  font-size: 10.5px;
-  font-weight: 800;
-  color: var(--palm-green);
-  white-space: nowrap;
-  letter-spacing: 0.5px;
-  margin-top: 2px;
-}
-
-.journey-item-content h5 {
-  font-family: 'Cinzel', serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--ink-primary);
-  margin-bottom: 2px;
-}
-
-.journey-item-content p {
-  font-size: 12px;
-  color: var(--ink-secondary);
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 /* Food Menu Tables */
@@ -772,7 +706,7 @@ body {
 }
 
 .menu-grid-table td {
-  padding: 10px 18px;
+  padding: 11px 18px;
   font-size: 12.5px;
   color: var(--ink-primary);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -797,7 +731,7 @@ body {
 .master-table-wrap {
   width: 100%;
   background: #FFFFFF;
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.05);
@@ -812,7 +746,7 @@ body {
 
 .master-table th {
   background: var(--bg-surface);
-  padding: 13px 20px;
+  padding: 14px 22px;
   font-family: 'Cinzel', serif;
   font-size: 12px;
   font-weight: 800;
@@ -822,8 +756,8 @@ body {
 }
 
 .master-table td {
-  padding: 11px 20px;
-  font-size: 13px;
+  padding: 12px 22px;
+  font-size: 13.5px;
   color: var(--ink-primary);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   vertical-align: middle;
@@ -836,7 +770,13 @@ body {
 .master-total-row {
   background: var(--palm-light) !important;
   font-weight: 800;
-  font-size: 14px !important;
+}
+
+.master-total-row td {
+  padding: 16px 22px;
+  color: var(--palm-green);
+  font-size: 15px;
+  border-top: 2px solid var(--palm-green);
 }
 
 /* Bottom Dock */
@@ -1018,9 +958,6 @@ body {
   .index-card-grid, .options-grid-4 {
     grid-template-columns: 1fr 1fr;
   }
-  .journey-days-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media print {
@@ -1053,7 +990,7 @@ body {
   </div>
 
   <div class="nav-center">
-    <span class="nav-slide-pill" id="navSlideLabel">01 / 36</span>
+    <span class="nav-slide-pill" id="navSlideLabel">01 / 41</span>
     <div class="nav-progress-track">
       <div class="nav-progress-fill" id="progressBar"></div>
     </div>
@@ -1066,8 +1003,8 @@ body {
     <button class="btn-nav-action" id="btnPrint" title="Print / PDF Export" onclick="window.print()">
       <i class="fa-solid fa-print"></i> PDF
     </button>
-    <button class="btn-nav-action primary" onclick="goToSlide(34)">
-      <i class="fa-solid fa-calculator"></i> Master Costing
+    <button class="btn-nav-action primary" onclick="goToSlide(39)">
+      <i class="fa-solid fa-calculator"></i> ₹10L Production
     </button>
   </div>
 </header>
@@ -1076,18 +1013,18 @@ body {
 <main class="deck-viewport">
 
   <!-- SLIDE 01: COVER -->
-  <section class="slide active" id="slide-1" data-day="Cover" data-title="Cover">
+  <section class="slide active" id="slide-1" data-day="Cover" data-title="The Wedding Proposal">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
-          <span class="eyebrow-tag">THE WEDDING PROPOSAL OF</span>
+          <span class="eyebrow-tag">THE WEDDING PROPOSAL</span>
         </div>
         
         <h1 class="slide-h1" style="font-size: clamp(36px, 4.2vw, 58px);">Ms. Ayushi Desai<br>& Mr. Amit D</h1>
-        <div class="slide-subheading" style="font-size: 25px;">A Goan Celebration · Design, Production & Cost Proposal</div>
+        <div class="slide-subheading" style="font-size: 25px;">A Two-Day Celebration in Goa · Design, Production & Commercial Proposal</div>
         
         <p class="slide-narrative" style="font-size: 16px;">
-          A comprehensive design, experiential production, and financial proposal for two days on the coast of South Goa — from the sacred White Wedding and celebratory banquets to the royal Baraat and sunset oceanfront Pheras.
+          A luxury wedding proposal, event-wise selection catalogue, and transparent commercial proposal across two days on the coast of South Goa — from the sacred White Wedding into the royal Baraat and sunset oceanfront Pheras.
         </p>
 
         <div class="chip-group" style="margin-bottom: 28px;">
@@ -1098,7 +1035,7 @@ body {
 
         <div>
           <button class="btn-nav-action primary" onclick="nextSlide()" style="height: 46px; padding: 0 30px; font-size: 13.5px; letter-spacing: 1.5px;">
-            EXPLORE PROPOSAL DECK <i class="fa-solid fa-arrow-right"></i>
+            EXPLORE WEDDING PROPOSAL <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>
@@ -1106,224 +1043,72 @@ body {
       <div class="widescreen-right">
         <div class="hero-image-frame" style="height: 540px;">
           <img src="assets/beach-mandap.jpg" alt="Sunset Beach Mandap" onclick="openLightbox(this.src)">
-          <div class="image-badge"><i class="fa-solid fa-camera"></i> Oceanfront Mandap & Coastal Setting</div>
+          <div class="image-badge"><i class="fa-solid fa-camera"></i> Oceanfront Beach Mandap · Azaya Resort</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 02: PRESENTATION INDEX -->
-  <section class="slide" id="slide-2" data-day="Index" data-title="Presentation Index">
+  <!-- SLIDE 02: INDEX / ITINERARY -->
+  <section class="slide" id="slide-2" data-day="Index" data-title="Index & Journey">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
         <span class="eyebrow-tag">PRESENTATION INDEX</span>
         <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">Master Proposal Navigation</span>
+        <span class="eyebrow-sub">Master Chronological Journey</span>
       </div>
 
       <h2 class="slide-h1">Index of Presentation</h2>
-      <div class="slide-subheading">Itinerary &rarr; Venue Tour &rarr; Day 1 White Wedding &rarr; Day 2 Auspicious Vidhi & Baraat &rarr; Essentials & Master Budget</div>
+      <div class="slide-subheading">A seamless chronological journey across Day 1, Day 2, and Additional Essentials</div>
 
       <div class="index-card-grid">
-        <div class="index-nav-card" onclick="goToSlide(3)">
+        <div class="index-nav-card" onclick="goToSlide(5)">
           <div>
-            <div class="index-nav-num">01</div>
-            <div class="index-nav-title">Itinerary & Venue</div>
-            <div class="index-nav-desc">Centered 2-day timeline, 10-acre resort grounds & decor moodboard.</div>
+            <div class="index-nav-num">DAY 1</div>
+            <div class="index-nav-title">White Wedding & Evening</div>
+            <div class="index-nav-desc">
+              • Breakfast & Guest Welcome<br>
+              • White Wedding & Church Service<br>
+              • Couple Car & Formal Reception<br>
+              • Giveaways, Dinner & After Party
+            </div>
           </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 03–05 &rarr;</div>
+          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:8px;">Slides 05–16 &rarr;</div>
         </div>
 
-        <div class="index-nav-card" onclick="goToSlide(6)">
+        <div class="index-nav-card" onclick="goToSlide(17)">
           <div>
-            <div class="index-nav-num">02</div>
-            <div class="index-nav-title">Day 1 · White Wedding</div>
-            <div class="index-nav-desc">Church service, car decor, 3-tier cake, giveaways & cost sheets.</div>
+            <div class="index-nav-num">DAY 2</div>
+            <div class="index-nav-title">Vidhi, Baraat & Pheras</div>
+            <div class="index-nav-desc">
+              • Breakfast & Ganpati Sthapna<br>
+              • Safa & Ghodi, Vintage Cars & SFX<br>
+              • DJ on Wheels, Swagat & Bars<br>
+              • Couple Entry, Mandap & Dinner
+            </div>
           </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 06–09 &rarr;</div>
+          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:8px;">Slides 17–34 &rarr;</div>
         </div>
 
-        <div class="index-nav-card" onclick="goToSlide(10)">
+        <div class="index-nav-card" onclick="goToSlide(35)">
           <div>
-            <div class="index-nav-num">03</div>
-            <div class="index-nav-title">Day 1 · Dinner & After Party</div>
-            <div class="index-nav-desc">Dinner production, included menus, additional options chart & late party.</div>
+            <div class="index-nav-num">ESSENTIALS</div>
+            <div class="index-nav-title">Essentials & Master Budget</div>
+            <div class="index-nav-desc">
+              • Photography & 21-Member Team<br>
+              • Logistics Fleet & Bartenders<br>
+              • Licenses & Welcome Hampers<br>
+              • ₹10L Production & Master Budget
+            </div>
           </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 10–13 &rarr;</div>
-        </div>
-
-        <div class="index-nav-card" onclick="goToSlide(14)">
-          <div>
-            <div class="index-nav-num">04</div>
-            <div class="index-nav-title">Day 2 · Vidhi & Baraat Prep</div>
-            <div class="index-nav-desc">Breakfast, Ganpati Sthapna, Safa & Ghodi, Vintage Cars & SFX Packages.</div>
-          </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 14–18 &rarr;</div>
-        </div>
-
-        <div class="index-nav-card" onclick="goToSlide(19)">
-          <div>
-            <div class="index-nav-num">05</div>
-            <div class="index-nav-title">Day 2 · Baraat & Swagat</div>
-            <div class="index-nav-desc">DJ on Wheels (Video), Swagat options, Moving Bars & Baraat Food.</div>
-          </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 19–22 &rarr;</div>
-        </div>
-
-        <div class="index-nav-card" onclick="goToSlide(23)">
-          <div>
-            <div class="index-nav-num">06</div>
-            <div class="index-nav-title">Day 2 · Main Entry Concepts</div>
-            <div class="index-nav-desc">2 Dedicated Entry Slides: Lotus Arch vs. Mirrored Spiral (Videos & Photos).</div>
-          </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 23–24 &rarr;</div>
-        </div>
-
-        <div class="index-nav-card" onclick="goToSlide(25)">
-          <div>
-            <div class="index-nav-num">07</div>
-            <div class="index-nav-title">Day 2 · Sunset Pheras & Dinner</div>
-            <div class="index-nav-desc">Beachfront mandap, phera bells, sound rig & wedding feast menus.</div>
-          </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 25–27 &rarr;</div>
-        </div>
-
-        <div class="index-nav-card" onclick="goToSlide(28)">
-          <div>
-            <div class="index-nav-num">08</div>
-            <div class="index-nav-title">Essentials & Master Costing</div>
-            <div class="index-nav-desc">Photos, Team, Logistics, Licenses, Hampers & ₹73.6L Master Budget.</div>
-          </div>
-          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:6px;">Slides 28–36 &rarr;</div>
+          <div style="font-size:11.5px; font-weight:700; color:var(--palm-green); margin-top:8px;">Slides 35–41 &rarr;</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 03: ITINERARY -->
-  <section class="slide" id="slide-3" data-day="Itinerary" data-title="Master Itinerary">
-    <div class="journey-container">
-      <div class="eyebrow-row" style="justify-content: center;">
-        <span class="eyebrow-tag">2-DAY WEDDING JOURNEY</span>
-        <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">Master Chronological Timeline</span>
-      </div>
-
-      <h2 class="slide-h1" style="font-size: clamp(30px, 3vw, 44px);">The Wedding Itinerary</h2>
-      <div class="slide-subheading">A seamless chronological journey across two magical days in South Goa</div>
-
-      <div class="journey-days-grid">
-        <div class="journey-day-card">
-          <div class="journey-day-header">
-            <div class="journey-day-title"><i class="fa-solid fa-church" style="color:var(--palm-green); margin-right:8px;"></i> Day 1 · White Wedding & Evening Reception</div>
-            <div class="journey-day-date">30th January 2026</div>
-          </div>
-
-          <div class="journey-timeline-list">
-            <div class="journey-item">
-              <div class="journey-time-pill">08:30 AM – 10:30 AM</div>
-              <div class="journey-item-content">
-                <h5>Welcome Breakfast & Guest Reception</h5>
-                <p>Welcome day morning breakfast spread, lobby hospitality desks & luggage assistance.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">11:00 AM – 01:00 PM</div>
-              <div class="journey-item-content">
-                <h5>White Wedding Ceremony</h5>
-                <p>Sacred chapel service, vows, bridal bouquet, sacramental wine toast & decorated couple car.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">01:30 PM – 03:30 PM</div>
-              <div class="journey-item-content">
-                <h5>Celebratory Indoor Luncheon</h5>
-                <p>Air-conditioned banquet salon dining with curated multi-cuisine buffet spread.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">04:30 PM – 06:30 PM</div>
-              <div class="journey-item-content">
-                <h5>Mehndi Ceremony & Hi-Tea</h5>
-                <p>Henna artistry, gajra wall, traditional giveaways, snacks & artisanal high tea.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">08:00 PM – 11:30 PM</div>
-              <div class="journey-item-content">
-                <h5>Formal Oceanfront Evening Reception</h5>
-                <p>3-Tier architectural cake cutting, celebrity emcee host, photo booth & formal dinner banquet.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">11:30 PM Onwards</div>
-              <div class="journey-item-content">
-                <h5>Late Night After Party Floor</h5>
-                <p>Club lounge audio rig, moving beams, DJ beats and midnight comfort munchies.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="journey-day-card">
-          <div class="journey-day-header">
-            <div class="journey-day-title"><i class="fa-solid fa-om" style="color:var(--palm-green); margin-right:8px;"></i> Day 2 · Auspicious Vidhi & Sunset Pheras</div>
-            <div class="journey-day-date">31st January 2026</div>
-          </div>
-
-          <div class="journey-timeline-list">
-            <div class="journey-item">
-              <div class="journey-time-pill">09:30 AM – 11:00 AM</div>
-              <div class="journey-item-content">
-                <h5>Ganpati Sthapna Puja</h5>
-                <p>Sacred sthapna ritual invoking divine blessings, traditional marigold floral mandap altar.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">11:30 AM – 01:00 PM</div>
-              <div class="journey-item-content">
-                <h5>Royal Safa Bandhi & Family Lunch</h5>
-                <p>60 Royal customized turbans tied by master drapers, followed by traditional family lunch.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">04:30 PM – 06:00 PM</div>
-              <div class="journey-item-content">
-                <h5>The Grand Royal Baraat</h5>
-                <p>Regal decorated Ghodi, high-powered mobile DJ on Wheels sound truck & 4 live dhol players.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">06:00 PM – 08:30 PM</div>
-              <div class="journey-item-content">
-                <h5>Beachfront Mandap Vidhi & Sunset Pheras</h5>
-                <p>4-Pillar oceanfront mandap, lotus varmalas, ceremonial guest phera bells & sunset Vedic pheras.</p>
-              </div>
-            </div>
-
-            <div class="journey-item">
-              <div class="journey-time-pill">08:30 PM Onwards</div>
-              <div class="journey-item-content">
-                <h5>Celebratory Wedding Dinner Banquet</h5>
-                <p>Grand wedding dinner feast, 2 live culinary stations, coastal seafood and vegetarian delicacies.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 04: VENUE TOUR -->
-  <section class="slide" id="slide-4" data-day="Venue Tour" data-title="Azaya Resort Tour">
+  <!-- SLIDE 03: VENUE TOUR -->
+  <section class="slide" id="slide-3" data-day="Venue Tour" data-title="Azaya Resort Grounds">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -1336,7 +1121,7 @@ body {
         <div class="slide-subheading">7 Outdoor Lawns, 114 Bespoke Keys & 6 Indoor Banquet Lounges</div>
         
         <p class="slide-narrative">
-          Spread across 10 lush beachfront acres along the white sands of Benaulim, South Goa. Azaya offers expansive lawns, private plunge pool suites, and state-of-the-art indoor banquet venues.
+          Spread across 10 lush beachfront acres along the pristine sands of Benaulim, South Goa. Azaya offers versatile outdoor lawns with Arabian Sea views, luxury plunge pool suites, and state-of-the-art indoor banquet venues.
         </p>
 
         <div class="feature-list">
@@ -1344,7 +1129,7 @@ body {
             <div class="feature-icon-circle"><i class="fa-solid fa-tree"></i></div>
             <div class="feature-row-content">
               <h4>Azaya Central (600 Pax) & Oasis Lawn (250 Pax)</h4>
-              <p>Grand central lawn for massive receptions and beachfront lawns for sunset pheras.</p>
+              <p>Grand central amphitheater lawn for massive receptions and beachfront lawns for sunset pheras.</p>
             </div>
           </div>
 
@@ -1360,7 +1145,7 @@ body {
             <div class="feature-icon-circle"><i class="fa-solid fa-martini-glass"></i></div>
             <div class="feature-row-content">
               <h4>The Library, Lynx Bar & Blue Iris Dining</h4>
-              <p>Climate-controlled banquets and beachfront restaurants equipped for late-night music.</p>
+              <p>Climate-controlled banquets and beachfront restaurants equipped for dining and late-night music.</p>
             </div>
           </div>
         </div>
@@ -1370,7 +1155,7 @@ body {
         <div class="quad-photo-grid">
           <div class="quad-photo-frame">
             <img src="assets/azaya_slide_01.png" alt="Resort Grounds" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-tree"></i> 10-Acre Grounds</div>
+            <div class="image-badge"><i class="fa-solid fa-tree"></i> 10-Acre Resort Grounds</div>
           </div>
           <div class="quad-photo-frame">
             <img src="assets/azaya_slide_03.png" alt="Oasis Beach Lawn" onclick="openLightbox(this.src)">
@@ -1389,8 +1174,8 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 05: DECOR INSPIRATION -->
-  <section class="slide" id="slide-5" data-day="Decor Mood" data-title="Decor Inspiration">
+  <!-- SLIDE 04: DECOR INSPIRATION -->
+  <section class="slide" id="slide-4" data-day="Decor Mood" data-title="Decor Inspiration">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -1403,7 +1188,7 @@ body {
         <div class="slide-subheading">Contemporary coastal romance with architectural floral installations</div>
         
         <p class="slide-narrative">
-          A harmonious balance of lush pastels, ivory drapes, mirrored reflective aisles, and warm amber illumination designed to complement the natural beauty of the Arabian Sea coastline.
+          A design language balancing lush pastels, ivory drapes, mirrored reflective aisles, sculpted lotus structures, and warm ambient illumination designed to complement the natural beauty of the Arabian Sea.
         </p>
 
         <div class="feature-list">
@@ -1411,7 +1196,7 @@ body {
             <div class="feature-icon-circle"><i class="fa-solid fa-palette"></i></div>
             <div class="feature-row-content">
               <h4>Curated Color Palette</h4>
-              <p>Blush pinks, ivory cream, coastal sage green, gold accents and terracotta warmth.</p>
+              <p>Blush pinks, ivory cream, coastal sage green, gold accents and warm terracotta tones.</p>
             </div>
           </div>
 
@@ -1419,7 +1204,7 @@ body {
             <div class="feature-icon-circle"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
             <div class="feature-row-content">
               <h4>Architectural Structures</h4>
-              <p>Sculpted lotus pillars, floating canopies, mirrored water-effect aisles and starlit fairy lights.</p>
+              <p>Sculpted lotus pillars, floating floral canopies, mirrored water-effect aisles and fairy light drops.</p>
             </div>
           </div>
 
@@ -1442,39 +1227,98 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 06: DAY 1 WHITE WEDDING CEREMONY & COST -->
-  <section class="slide" id="slide-6" data-day="Day 1" data-title="White Wedding Essentials">
+  <!-- SLIDE 05: DAY 1 BREAKFAST & WELCOME -->
+  <section class="slide" id="slide-5" data-day="Day 1" data-title="Breakfast & Guest Welcome">
+    <div class="widescreen-grid">
+      <div class="widescreen-left">
+        <div class="eyebrow-row">
+          <span class="eyebrow-tag">DAY 1 · GUEST ARRIVALS</span>
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-sub">Welcome Day Kick-off</span>
+        </div>
+
+        <h2 class="slide-h1">Breakfast & Guest Welcome</h2>
+        <div class="slide-subheading">Warm morning hospitality, guest arrivals, lobby check-in & welcome breakfast</div>
+        
+        <p class="slide-narrative">
+          The wedding celebrations begin on the morning of 30th January with a delightful welcome breakfast spread. Arriving guests are welcomed with traditional rosewater greetings, floral ribbons, welcome boards, seamless concierge check-in, and personalized room hampers.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-mug-saucer"></i></div>
+            <div class="feature-row-content">
+              <h4>Gourmet Morning Breakfast Spread</h4>
+              <p>Fresh bakeries, live egg & South Indian counters, coastal fruits, juices, tea and filter coffee.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-droplet"></i></div>
+            <div class="feature-row-content">
+              <h4>Traditional Welcome Greeting</h4>
+              <p>Fragrant rosewater greeting, floral ribbons, and personalized welcome board at the lobby.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-concierge-bell"></i></div>
+            <div class="feature-row-content">
+              <h4>Dedicated Hospitality Desks</h4>
+              <p>Dedicated counters in the resort lobby assisting guests with keys, luggage, and room check-in.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="widescreen-right">
+        <div class="dual-photo-grid">
+          <div class="dual-photo-frame">
+            <img src="assets/welcome-roses.jpg" alt="Welcome Greeting" onclick="openLightbox(this.src)">
+            <div class="image-badge"><i class="fa-solid fa-spa"></i> Traditional Welcome Greeting</div>
+          </div>
+          <div class="dual-photo-frame">
+            <img src="assets/breakfast_spread_luxury.jpg" alt="Breakfast Spread" onclick="openLightbox(this.src)">
+            <div class="image-badge"><i class="fa-solid fa-utensils"></i> Welcome Breakfast Spread</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 06: WHITE WEDDING -->
+  <section class="slide" id="slide-6" data-day="Day 1" data-title="White Wedding Ceremony">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
           <span class="eyebrow-tag">DAY 1 · WHITE WEDDING</span>
           <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Church Service & Essentials</span>
+          <span class="eyebrow-sub">Morning Chapel Service</span>
         </div>
 
-        <h2 class="slide-h1">White Wedding Ceremony Essentials</h2>
-        <div class="slide-subheading">Sacred vows, church blessing, bridal bouquet & sacramental toast</div>
+        <h2 class="slide-h1">White Wedding Ceremony</h2>
+        <div class="slide-subheading">Sacred vows, church blessing, bridal bouquet & celebratory toast</div>
         
         <p class="slide-narrative">
-          A quiet church ceremony with sacred hymns, pristine floral altar decor, handcrafted bridal bouquet, sacramental wine, rich plum cake, and champagne toast with fine glassware.
+          A quiet church, sacred hymns, pristine floral altar decor, handcrafted bridal bouquet, sacramental wine, plum cake, and champagne toast with fine glassware.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · White Wedding</span>
-            <span class="cost-card-total">₹1,50,000</span>
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-church"></i></div>
+            <div class="feature-row-content">
+              <h4>Church Ceremony Essentials (₹50,000)</h4>
+              <p>Handcrafted bridal bouquet, sacramental wine, plum cake, champagne & fine glassware setup.</p>
+            </div>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Church Setup (Bouquet + Wine + Plum Cake + Champagne + Crockery)</td>
-              <td class="price">₹50,000</td>
-            </tr>
-            <tr>
-              <td>Decor, Sound & Lights Setup (Provisional)</td>
-              <td class="price">₹1,00,000</td>
-            </tr>
-          </table>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="feature-row-content">
+              <h4>Decor, Sound & Lighting Production</h4>
+              <p>Altar floral styling, ambient lighting, sound system and technical operator support.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1493,14 +1337,77 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 07: DAY 1 CAR DECOR & COST -->
-  <section class="slide" id="slide-7" data-day="Day 1" data-title="Couple Car Styling">
+  <!-- SLIDE 07: WHITE WEDDING — COST SHEET -->
+  <section class="slide" id="slide-7" data-day="Day 1 Cost" data-title="White Wedding Cost Sheet">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">COMMERCIAL PROPOSAL · DAY 1</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Element-Wise Cost Breakdown</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">White Wedding — Cost Sheet</h2>
+      <div class="slide-subheading" style="margin-bottom: 20px;">Itemized production elements and ceremony essentials</div>
+
+      <div class="cost-sheet-container">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">White Wedding Ceremony</div>
+            <div class="cost-sheet-subtitle">Decor · Sound · Lights · Production</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-church text-amber-700"></i> Morning Chapel Service</div>
+        </div>
+
+        <table class="cost-sheet-table">
+          <thead>
+            <tr>
+              <th>Element Description</th>
+              <th style="text-align:right;">Cost (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ceremony Decor Setup</td>
+              <td class="price">₹25,000</td>
+            </tr>
+            <tr>
+              <td>Floral Styling & Altar Florals</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Ambience & Decorative Lighting</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Sound System & Technical Sound Support</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Power Backup & Technical Power</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td><strong>PRODUCTION SUBTOTAL (Part of ₹10L Package)</strong></td>
+              <td class="price"><strong>₹90,000</strong></td>
+            </tr>
+            <tr>
+              <td>Church Essentials (Bouquet + Wine + Plum Cake + Champagne + Crockery)</td>
+              <td class="price">₹50,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 08: COUPLE CAR -->
+  <section class="slide" id="slide-8" data-day="Day 1" data-title="Couple Car Styling">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
-          <span class="eyebrow-tag">DAY 1 · WHITE WEDDING</span>
+          <span class="eyebrow-tag">DAY 1 · BRIDAL AUTOMOBILE</span>
           <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Bridal Automobile Styling</span>
+          <span class="eyebrow-sub">Vehicle Styling</span>
         </div>
 
         <h2 class="slide-h1">Couple Car Styling & Decor</h2>
@@ -1510,16 +1417,18 @@ body {
           Artisanal fresh floral styling for the bridal car featuring elegant white roses, baby's breath, imported greenery, satin ribbons across the bonnet, and door handle floral bouquets.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Couple Car</span>
-            <span class="cost-card-total">₹20,000</span>
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
+          <div class="cost-sheet-header" style="padding:14px 20px;">
+            <div>
+              <div class="cost-sheet-title" style="font-size:14px;">Couple Car Decor</div>
+              <div class="cost-sheet-subtitle">Fresh Florals & Styling</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹20,000</div>
           </div>
-          <table class="cost-table-mini">
+          <table class="cost-sheet-table">
             <tr>
-              <td>Couple Car Fresh Floral & Ribbon Decoration</td>
-              <td class="price">₹20,000</td>
+              <td style="padding:12px 20px;">Couple Car Fresh Floral & Ribbon Decoration</td>
+              <td class="price" style="padding:12px 20px;">₹20,000</td>
             </tr>
           </table>
         </div>
@@ -1534,47 +1443,47 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 08: DAY 1 FORMAL RECEPTION CAKE & HOST & COST -->
-  <section class="slide" id="slide-8" data-day="Day 1" data-title="Reception Cake & Host">
+  <!-- SLIDE 09: FORMAL DINNER / RECEPTION -->
+  <section class="slide" id="slide-9" data-day="Day 1" data-title="Formal Reception & Dinner">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
-          <span class="eyebrow-tag">DAY 1 · FORMAL RECEPTION</span>
+          <span class="eyebrow-tag">DAY 1 · EVENING RECEPTION</span>
           <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Stage Ceremony & Entertainment</span>
+          <span class="eyebrow-sub">Starlit Coastal Gala</span>
         </div>
 
-        <h2 class="slide-h1">3-Tier Cake, Celebrity Host & Liquor</h2>
-        <div class="slide-subheading">Architectural cake cutting, professional emcee host & curated bar service</div>
+        <h2 class="slide-h1">Formal Dinner & Reception</h2>
+        <div class="slide-subheading">Oceanfront lawn banquet, 3-tier cake, celebrity emcee & stage production</div>
         
         <p class="slide-narrative">
-          An opulent evening on Azaya's oceanfront lawn featuring a 3-tier architectural fondant cake, a charismatic celebrity anchor to host the stage ceremony, dual sound rigs, and liquor served as per consumption.
+          An opulent evening set upon Azaya's oceanfront lawn against the sound of breaking waves. Featuring a ceremonial 3-tier cake cutting, celebrity emcee host, starlit dining decor, dual sound rigs, and ambient lighting.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Formal Reception</span>
-            <span class="cost-card-total">₹1,65,000 ++</span>
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-cake-candles"></i></div>
+            <div class="feature-row-content">
+              <h4>3-Tier Architectural Cake (₹15,000 ++)</h4>
+              <p>Architectural 3-tier customized fondant cake with live cake cutting stage setup.</p>
+            </div>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>3-Tier Architectural Wedding Cake</td>
-              <td class="price">₹15,000 ++</td>
-            </tr>
-            <tr>
-              <td>Celebrity Emcee / Anchor Host</td>
-              <td class="price">₹50,000</td>
-            </tr>
-            <tr>
-              <td>Decor, Sound & Lights Setup (Provisional)</td>
-              <td class="price">₹1,00,000</td>
-            </tr>
-            <tr>
-              <td>Liquor Consumption</td>
-              <td class="price">As Per Consumption</td>
-            </tr>
-          </table>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-microphone"></i></div>
+            <div class="feature-row-content">
+              <h4>Celebrity Emcee / Anchor Host (₹50,000)</h4>
+              <p>Professional wedding anchor conducting the couple entry, toast, and family speeches.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-martini-glass"></i></div>
+            <div class="feature-row-content">
+              <h4>Curated Bar Service</h4>
+              <p>Cocktail bar service provided as per actual consumption.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1593,37 +1502,170 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 09: DAY 1 GUEST GIVEAWAYS & COST -->
-  <section class="slide" id="slide-9" data-day="Day 1" data-title="Reception Giveaways">
+  <!-- SLIDE 10: FORMAL DINNER — COST SHEET -->
+  <section class="slide" id="slide-10" data-day="Day 1 Cost" data-title="Formal Dinner Cost Sheet">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">COMMERCIAL PROPOSAL · DAY 1</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Element-Wise Cost Breakdown</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">Formal Dinner — Cost Sheet</h2>
+      <div class="slide-subheading" style="margin-bottom: 20px;">Itemized production elements for the evening oceanfront reception</div>
+
+      <div class="cost-sheet-container">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">Formal Dinner & Reception</div>
+            <div class="cost-sheet-subtitle">Decor · Sound · Lights · Production</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-utensils text-amber-700"></i> Oceanfront Lawn Gala</div>
+        </div>
+
+        <table class="cost-sheet-table">
+          <thead>
+            <tr>
+              <th>Element Description</th>
+              <th style="text-align:right;">Cost (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Formal Dinner Decor Setup</td>
+              <td class="price">₹35,000</td>
+            </tr>
+            <tr>
+              <td>Floral Styling & Stage Floral Installations</td>
+              <td class="price">₹25,000</td>
+            </tr>
+            <tr>
+              <td>Table Styling & Centrepieces</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Entrance & Backdrop Decor Installation</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Ambience / Uplighting</td>
+              <td class="price">₹25,000</td>
+            </tr>
+            <tr>
+              <td>Warm Decorative Lighting & Rigging</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Professional Sound System</td>
+              <td class="price">₹30,000</td>
+            </tr>
+            <tr>
+              <td>Sound Console & Technical Support</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Power Backup & Technical Power</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td><strong>FORMAL DINNER PRODUCTION TOTAL (Part of ₹10L Package)</strong></td>
+              <td class="price"><strong>₹2,05,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 11: CAKE / HOST / LIQUOR -->
+  <section class="slide" id="slide-11" data-day="Day 1" data-title="Cake, Host & Bar">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">DAY 1 · RECEPTION ELEMENTS</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Stage Ceremony & Bar</span>
+      </div>
+
+      <h2 class="slide-h1">3-Tier Cake, Celebrity Host & Bar</h2>
+      <div class="slide-subheading">Confirmed commercials for reception ceremonial elements</div>
+
+      <div class="options-grid-4" style="grid-template-columns: repeat(3, 1fr); margin-top:20px;">
+        <div class="option-card-box">
+          <img src="assets/wedding_cake_real.jpg" alt="3-Tier Cake" class="option-card-img" style="height:220px;" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Cake Cutting</div>
+              <div class="option-card-title">3-Tier Architectural Cake</div>
+              <div class="option-card-desc">Designer 3-tier customized fondant cake with special cutting table setup.</div>
+            </div>
+            <div class="option-card-price">₹15,000 ++</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/photographer_team.jpg" alt="Celebrity Host" class="option-card-img" style="height:220px;" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Stage Entertainment</div>
+              <div class="option-card-title">Celebrity Emcee / Host</div>
+              <div class="option-card-desc">Professional anchor managing couple entry, stage games, toasts & speeches.</div>
+            </div>
+            <div class="option-card-price">₹50,000</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/bartender_cocktails.jpg" alt="Bar Service" class="option-card-img" style="height:220px;" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Beverage Service</div>
+              <div class="option-card-title">Premium Bar Service</div>
+              <div class="option-card-desc">Full bar setup, mixology service and glassware management.</div>
+            </div>
+            <div class="option-card-price" style="background:var(--bg-muted); color:var(--ink-primary);">As Per Consumption</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 12: GIVEAWAYS -->
+  <section class="slide" id="slide-12" data-day="Day 1" data-title="Guest Giveaways & Booth">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
-          <span class="eyebrow-tag">DAY 1 · FORMAL RECEPTION</span>
+          <span class="eyebrow-tag">DAY 1 · GUEST FAVORS</span>
           <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Guest Favors & Experiential Booth</span>
+          <span class="eyebrow-sub">Keepsake Memories</span>
         </div>
 
         <h2 class="slide-h1">Guest Giveaways & Photo Booth</h2>
         <div class="slide-subheading">Instant framed photo memories, lapel brooches & designer bracelets</div>
         
         <p class="slide-narrative">
-          Interactive and cherished keepsakes for all attendees — custom photo booth with instant personalized photo frames, alongside bespoke brooch pins and artificial bracelets presented to guests on arrival.
+          Interactive guest experiences and traditional keepsakes — customized photo booth with instant physical framed prints, alongside bespoke lapel brooches and artificial bracelets presented to guests.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Giveaways</span>
-            <span class="cost-card-total">₹50,000</span>
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
+          <div class="cost-sheet-header" style="padding:14px 20px;">
+            <div>
+              <div class="cost-sheet-title" style="font-size:14px;">Giveaways & Photo Booth</div>
+              <div class="cost-sheet-subtitle">Guest Keepsakes</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹50,000</div>
           </div>
-          <table class="cost-table-mini">
+          <table class="cost-sheet-table">
             <tr>
-              <td>Photo Booth with Customized Physical Photo Frames</td>
-              <td class="price">₹35,000</td>
+              <td style="padding:10px 20px;">Photo Booth with Customized Physical Photo Frames</td>
+              <td class="price" style="padding:10px 20px;">₹35,000</td>
             </tr>
             <tr>
-              <td>Brooch + Artificial Bracelet Favors</td>
-              <td class="price">₹15,000</td>
+              <td style="padding:10px 20px;">Brooch + Artificial Bracelet Favors</td>
+              <td class="price" style="padding:10px 20px;">₹15,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td style="padding:12px 20px;"><strong>GIVEAWAYS TOTAL</strong></td>
+              <td class="price" style="padding:12px 20px;"><strong>₹50,000</strong></td>
             </tr>
           </table>
         </div>
@@ -1644,196 +1686,103 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 10: DAY 1 WEDDING DINNER DECOR & PRODUCTION & COST -->
-  <section class="slide" id="slide-10" data-day="Day 1" data-title="Dinner Decor & Production">
-    <div class="widescreen-grid">
-      <div class="widescreen-left">
-        <div class="eyebrow-row">
-          <span class="eyebrow-tag">DAY 1 · WEDDING DINNER</span>
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Banqueting & Production Setup</span>
-        </div>
-
-        <h2 class="slide-h1">Wedding Dinner Decor & Production</h2>
-        <div class="slide-subheading">Oceanfront lawn banqueting, botanical entrance arch & ambient lighting</div>
-        
-        <p class="slide-narrative">
-          Sophisticated dinner setups across Azaya's oceanfront lawns and climate-controlled salons. Artisanal entrance arches, elegant dining tables with linen and floral runners, ambient golden lighting, and synchronized background acoustic sound.
-        </p>
-
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Dinner Production</span>
-            <span class="cost-card-total">₹1,00,000</span>
-          </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Formal Dinner Decor, Sound & Lights Setup (Provisional)</td>
-              <td class="price">₹1,00,000</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="widescreen-right">
-        <div class="hero-image-frame" style="height: 540px;">
-          <img src="assets/dessert-buffet.jpg" alt="Formal Dinner Setup" onclick="openLightbox(this.src)">
-          <div class="image-badge"><i class="fa-solid fa-utensils"></i> Formal Dinner Dining Setup</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 11: DAY 1 FOOD MENU · PACKAGE INCLUSIONS (PAGE 1) -->
-  <section class="slide" id="slide-11" data-day="Day 1 Food" data-title="Package Food Inclusions">
+  <!-- SLIDE 13: DINNER MENU -->
+  <section class="slide" id="slide-13" data-day="Day 1 Food" data-title="Included Dinner Menu">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
-        <span class="eyebrow-tag">DAY 1 · FOOD & BEVERAGE (PAGE 1)</span>
+        <span class="eyebrow-tag">DAY 1 · FOOD & BEVERAGE</span>
         <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">Package Inclusive Menu Grid</span>
+        <span class="eyebrow-sub">Package Inclusions</span>
       </div>
 
-      <h2 class="slide-h1">Food Menu Included in Package</h2>
-      <div class="slide-subheading">Comprehensive culinary spreads included within the ₹30,00,000 Resort Package</div>
+      <h2 class="slide-h1">Day 1 Dinner Menu (Included in Package)</h2>
+      <div class="slide-subheading">Comprehensive multi-cuisine dinner banquet included in the ₹30,00,000 Resort Package</div>
 
       <div class="menu-table-wrap">
         <table class="menu-grid-table">
           <thead>
             <tr>
-              <th style="width: 34%;">Lunch Spread (Included)</th>
-              <th style="width: 44%;">Dinner Banquet (Included)</th>
-              <th style="width: 22%;">Hi-Tea – 2 Hours</th>
+              <th style="width: 30%;">Starters & Live Counters</th>
+              <th style="width: 45%;">Main Course, Rice & Breads</th>
+              <th style="width: 25%;">Desserts & Accompaniments</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                • 1 Veg Soup<br>
-                • 3 Veg Salads<br>
-                • 1 Curd Preparation<br>
-                • 4 Veg Main Course<br>
-                • 1 Dal Preparation<br>
-                • 2 Veg Rice (Steamed + Flavoured)<br>
-                • Assorted Indian Breads<br>
-                • 2 Desserts<br>
-                • 1 Ice Cream<br>
-                • Papad + Pickle + Condiments
-              </td>
-              <td>
                 • <strong>Dinner Starters (90 mins):</strong> 4 Veg Starters<br>
-                • <strong>2 Live Counters (Veg)</strong><br>
-                • 1 Veg Soup<br>
-                • 4 Veg Salads<br>
-                • 1 Curd Preparation<br>
-                • 5 Veg Main Course<br>
-                • 1 Dal Preparation<br>
-                • 2 Veg Rice (Steamed + Flavoured)<br>
-                • Assorted Indian Breads<br>
-                • 3 Desserts<br>
-                • 2 Ice Creams<br>
-                • Papad + Pickle + Condiments
+                • <strong>2 Live Counters (Veg):</strong> Pasta Station / Chaat Counter<br>
+                • 1 Veg Soup (Tamatar Dhaniya Shorba)<br>
+                • 4 Veg Salads (Channa Chaat, Russian Salad, Tossed Greens, Kimchi)<br>
+                • 1 Curd Preparation / Raita
               </td>
               <td>
-                • 2 Fresh Veg Snacks<br>
-                • Assorted Bakery Cookies<br>
-                • Premium Tea & Filter Coffee<br><br>
+                • <strong>5 Veg Main Course:</strong> Paneer Butter Masala, Subz Nizami Handi, Kofta in Yellow Gravy, Aloo Gobi Adraki, Mix Vegetable Jalfrazi<br>
+                • <strong>1 Dal:</strong> Dal Makhani / Yellow Dal Tadka<br>
+                • <strong>2 Veg Rice:</strong> Vegetable Dum Biryani + Steamed Basmati<br>
+                • <strong>Assorted Breads:</strong> Naan, Roti, Lachcha Parantha, Kulcha
+              </td>
+              <td>
+                • <strong>3 Desserts:</strong> Gulab Jamun, Kesari Phirni, Moong Dal Halwa<br>
+                • <strong>2 Ice Creams:</strong> Vanilla & Chocolate<br>
+                • Papad + Pickle + Condiments<br><br>
                 <span class="menu-badge"><i class="fa-solid fa-check"></i> Inc. in Resort Package</span>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:12px; color:var(--ink-muted); margin-top:10px;">
-        *Note: The menus above are fully inclusive for all residential guests within the master ₹30,00,000 resort package.
-      </p>
     </div>
   </section>
 
-  <!-- SLIDE 12: DAY 1 FOOD MENU · ADDITIONAL OPTIONS CHART (PAGE 2) -->
-  <section class="slide" id="slide-12" data-day="Day 1 Food" data-title="Additional Menu Options">
+  <!-- SLIDE 14: ADDITIONAL FOOD OPTIONS -->
+  <section class="slide" id="slide-14" data-day="Day 1 Food" data-title="Additional Menu Options">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
-        <span class="eyebrow-tag">DAY 1 · FOOD & BEVERAGE (PAGE 2)</span>
+        <span class="eyebrow-tag">DAY 1 · FOOD UPGRADES</span>
         <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">Azaya Compendium Upgrades</span>
+        <span class="eyebrow-sub">Azaya Compendium Rates</span>
       </div>
 
-      <h2 class="slide-h1">Additional Food & Beverage Options Chart</h2>
-      <div class="slide-subheading">A-la-carte live counters, street packages, non-veg upgrades & bar packages with exact rates</div>
+      <h2 class="slide-h1">Additional Food & Beverage Options</h2>
+      <div class="slide-subheading">A-la-carte live stations, street packages & bar packages with exact compendium pricing</div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 10px;">
-        <div class="cost-summary-card" style="margin-top:0;">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-fire-burner text-amber-700"></i> Live Culinary Stations</span>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Per Person Rates</span>
+        <div class="cost-sheet-container" style="margin-top:0;">
+          <div class="cost-sheet-header" style="padding:12px 20px;">
+            <div class="cost-sheet-title" style="font-size:13.5px;"><i class="fa-solid fa-fire-burner text-amber-700"></i> Live Culinary Stations</div>
+            <span style="font-size:11.5px; font-weight:700; color:var(--palm-green);">Per Person</span>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Standard Live Counters (Pao Bhaji, Chaat, Dosas, Pasta, Noodle Bar)</td>
-              <td class="price">₹250 ++</td>
-            </tr>
-            <tr>
-              <td>Indian Grills (Dal Bati Churma, Amritsari Chole Kulcha, Aapams)</td>
-              <td class="price">₹350 ++</td>
-            </tr>
-            <tr>
-              <td>Coastal & Regional (Fish Recheado, Murg Galauti, Cafreal)</td>
-              <td class="price">₹400–450 ++</td>
-            </tr>
-            <tr>
-              <td>Mutton Sukha, Gosht Galauti & Keema Kaleji</td>
-              <td class="price">₹500 ++</td>
-            </tr>
-            <tr>
-              <td>Fish, Prawn & Squid Grills (With Baby Lobster ₹1,500++)</td>
-              <td class="price">₹750 ++</td>
-            </tr>
-            <tr>
-              <td>The Chaat Gully (Choose 4 Hot/Cold items for 2 hours)</td>
-              <td class="price">₹750 ++</td>
-            </tr>
+          <table class="cost-sheet-table">
+            <tr><td>Standard Live Counters (Pao Bhaji, Chaat, Dosas, Pasta, Noodle Bar)</td><td class="price">₹250 ++</td></tr>
+            <tr><td>Indian Grills (Dal Bati Churma, Amritsari Chole Kulcha, Aapams)</td><td class="price">₹350 ++</td></tr>
+            <tr><td>Coastal & Regional (Fish Recheado, Murg Galauti, Cafreal)</td><td class="price">₹400–450 ++</td></tr>
+            <tr><td>Mutton Sukha, Gosht Galauti & Keema Kaleji</td><td class="price">₹500 ++</td></tr>
+            <tr><td>Fish, Prawn & Squid Grills (With Baby Lobster ₹1,500++)</td><td class="price">₹750 ++</td></tr>
+            <tr><td>The Chaat Gully (Choose 4 Hot/Cold items for 2 hours)</td><td class="price">₹750 ++</td></tr>
           </table>
         </div>
 
-        <div class="cost-summary-card" style="margin-top:0;">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-martini-glass-citrus text-amber-700"></i> Beverage & High Tea Packages</span>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Per Person Rates</span>
+        <div class="cost-sheet-container" style="margin-top:0;">
+          <div class="cost-sheet-header" style="padding:12px 20px;">
+            <div class="cost-sheet-title" style="font-size:13.5px;"><i class="fa-solid fa-martini-glass-citrus text-amber-700"></i> Beverage & High Tea Packages</div>
+            <span style="font-size:11.5px; font-weight:700; color:var(--palm-green);">Per Person</span>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Mocktail Package (Choose 4 for 3 Hours - Mojito, Cran-Dandy, etc.)</td>
-              <td class="price">₹550 ++</td>
-            </tr>
-            <tr>
-              <td>Cocktail Package (Choose 4 for 3 Hours - Planters Punch, LIIT, etc.)</td>
-              <td class="price">₹1,500 ++</td>
-            </tr>
-            <tr>
-              <td>High Tea Packages (Mumbai Street / Regional Street / Global Sandwiches)</td>
-              <td class="price">₹750 ++</td>
-            </tr>
-            <tr>
-              <td>Brilliance Liquor Package (Teacher's, Smirnoff, Bacardi - 2 Hours)</td>
-              <td class="price">₹2,200 ++</td>
-            </tr>
-            <tr>
-              <td>Essence Liquor Package (Black Label, Chivas 12, Absolut - 2 Hours)</td>
-              <td class="price">₹2,800 ++</td>
-            </tr>
-            <tr>
-              <td>Excellence Liquor Package (Gold Label, Glenfiddich 15, Grey Goose)</td>
-              <td class="price">₹3,800 ++</td>
-            </tr>
+          <table class="cost-sheet-table">
+            <tr><td>Mocktail Package (Choose 4 for 3 Hours - Mojito, Cran-Dandy, etc.)</td><td class="price">₹550 ++</td></tr>
+            <tr><td>Cocktail Package (Choose 4 for 3 Hours - Planters Punch, LIIT, etc.)</td><td class="price">₹1,500 ++</td></tr>
+            <tr><td>High Tea Packages (Mumbai Street / Regional Street / Global Sandwiches)</td><td class="price">₹750 ++</td></tr>
+            <tr><td>Brilliance Liquor Package (Teacher's, Smirnoff, Bacardi - 2 Hours)</td><td class="price">₹2,200 ++</td></tr>
+            <tr><td>Essence Liquor Package (Black Label, Chivas 12, Absolut - 2 Hours)</td><td class="price">₹2,800 ++</td></tr>
+            <tr><td>Excellence Liquor Package (Gold Label, Glenfiddich 15, Grey Goose)</td><td class="price">₹3,800 ++</td></tr>
           </table>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 13: DAY 1 AFTER PARTY & COST -->
-  <section class="slide" id="slide-13" data-day="Day 1" data-title="Late Night After Party">
+  <!-- SLIDE 15: AFTER PARTY -->
+  <section class="slide" id="slide-15" data-day="Day 1" data-title="Late Night After Party">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -1843,32 +1792,36 @@ body {
         </div>
 
         <h2 class="slide-h1">Late Night After Party Floor</h2>
-        <div class="slide-subheading">High-octane club audio, moving beam lights, DJ beats & late-night comfort snacks</div>
+        <div class="slide-subheading">High-octane club audio, moving beam lights, DJ console & dance floor</div>
         
         <p class="slide-narrative">
-          When the lawn banquet concludes at 10:00 PM, guests transition indoors to Lynx Bar & Club. Concert audio, DMX moving heads, laser effects, customizable DJ booth, and midnight comfort munchies.
+          When the lawn reception concludes at 10:00 PM, guests transition indoors to Lynx Bar & Club. Concert-grade sound rig, intelligent moving lights, specialized dance floor, custom sound console fascia, and late-night food & bar service.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · After Party</span>
-            <span class="cost-card-total">₹1,00,000 (Prov.)</span>
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-music"></i></div>
+            <div class="feature-row-content">
+              <h4>Club Audio Sound System</h4>
+              <p>Concert-grade subwoofers and line array tops tuned for deep bass electronic dance sets.</p>
+            </div>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>After Party Sound & Lights Rig</td>
-              <td class="price">TBD</td>
-            </tr>
-            <tr>
-              <td>Club Lounge Stage & Lighting Decor (Provisional)</td>
-              <td class="price">₹1,00,000</td>
-            </tr>
-            <tr>
-              <td>Late Night Comfort Food & Bar</td>
-              <td class="price">As Per Consumption</td>
-            </tr>
-          </table>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="feature-row-content">
+              <h4>Intelligent Moving Beam Lights</h4>
+              <p>DMX controlled moving heads, laser beams, stroboscopes, and atmospheric haze.</p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-burger"></i></div>
+            <div class="feature-row-content">
+              <h4>Late-Night Food & Bar</h4>
+              <p>Comfort finger food and bar service available as per actual consumption.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1881,8 +1834,87 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 14: DAY 2 BREAKFAST & HOSPITALITY -->
-  <section class="slide" id="slide-14" data-day="Day 2" data-title="Day 2 Breakfast">
+  <!-- SLIDE 16: AFTER PARTY — COST SHEET -->
+  <section class="slide" id="slide-16" data-day="Day 1 Cost" data-title="After Party Cost Sheet">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">COMMERCIAL PROPOSAL · DAY 1</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Element-Wise Cost Breakdown</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">After Party — Cost Sheet</h2>
+      <div class="slide-subheading" style="margin-bottom: 20px;">Itemized production elements for the indoor club session</div>
+
+      <div class="cost-sheet-container">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">Late Night After Party</div>
+            <div class="cost-sheet-subtitle">Decor · Sound · Lights · Production</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-bolt text-amber-700"></i> Lynx Club Lounge</div>
+        </div>
+
+        <table class="cost-sheet-table">
+          <thead>
+            <tr>
+              <th>Element Description</th>
+              <th style="text-align:right;">Cost (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Welcome Board</td>
+              <td class="price">₹5,000</td>
+            </tr>
+            <tr>
+              <td>Entrance Décor</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Dance Floor</td>
+              <td class="price">₹35,000</td>
+            </tr>
+            <tr>
+              <td>Sound Console Fascia</td>
+              <td class="price">₹10,000</td>
+            </tr>
+            <tr>
+              <td>Ambience Lighting</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Decorative Lighting & Rigging</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Professional Sound System</td>
+              <td class="price">₹25,000</td>
+            </tr>
+            <tr>
+              <td>Technical Sound Support</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Power Backup & Technical Power</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td><strong>AFTER PARTY PRODUCTION TOTAL (Part of ₹10L Package)</strong></td>
+              <td class="price"><strong>₹1,55,000</strong></td>
+            </tr>
+            <tr>
+              <td>Late-Night Food & Bar Service</td>
+              <td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">As Per Consumption</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 17: DAY 2 BREAKFAST -->
+  <section class="slide" id="slide-17" data-day="Day 2" data-title="Day 2 Morning Breakfast">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -1891,23 +1923,25 @@ body {
           <span class="eyebrow-sub">Day 2 Kick-off</span>
         </div>
 
-        <h2 class="slide-h1">Morning Breakfast Spread</h2>
+        <h2 class="slide-h1">Day 2 Morning Breakfast</h2>
         <div class="slide-subheading">Gourmet buffet breakfast, live egg stations, South Indian & bakery spreads</div>
         
         <p class="slide-narrative">
-          A fresh coastal breakfast to start the wedding day rituals. Live dosa & uttapam counters, fresh fruit juices, continental bakeries, wellness stations, tea and freshly brewed coffee at La Concha restaurant.
+          A fresh coastal breakfast spread to start the wedding day rituals. Live dosa & uttapam counters, fresh fruit juices, continental bakeries, wellness stations, tea and freshly brewed coffee at La Concha restaurant.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Day 2 Breakfast</span>
-            <span class="cost-card-total" style="color:var(--palm-green);">Included</span>
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
+          <div class="cost-sheet-header" style="padding:14px 20px;">
+            <div>
+              <div class="cost-sheet-title" style="font-size:14px;">Day 2 Breakfast</div>
+              <div class="cost-sheet-subtitle">Residential Inclusions</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">Included</div>
           </div>
-          <table class="cost-table-mini">
+          <table class="cost-sheet-table">
             <tr>
-              <td>Full Residential Buffet Breakfast for all guests</td>
-              <td class="price">Inc in Hotel Package</td>
+              <td style="padding:12px 20px;">Full Residential Buffet Breakfast for all guests</td>
+              <td class="price" style="padding:12px 20px; color:var(--palm-green);">Included in Hotel Package</td>
             </tr>
           </table>
         </div>
@@ -1922,8 +1956,8 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 15: DAY 2 GANPATI STHAPNA & FAMILY LUNCH & COST -->
-  <section class="slide" id="slide-15" data-day="Day 2" data-title="Ganpati Sthapna & Lunch">
+  <!-- SLIDE 18: GANPATI / VIDHI + LUNCH -->
+  <section class="slide" id="slide-18" data-day="Day 2" data-title="Ganpati Sthapna & Lunch">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -1939,22 +1973,22 @@ body {
           The wedding day commences with Vedic chanting and Ganpati Sthapna on a traditional floral altar. Followed by a pure satvik family lunch spread before afternoon baraat preparations.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Puja & Lunch</span>
-            <span class="cost-card-total">₹1,00,000 (Prov.)</span>
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-om"></i></div>
+            <div class="feature-row-content">
+              <h4>Sacred Ganpati Puja Altar</h4>
+              <p>Traditional floral backdrop, wooden chowki, brass diyas, and authentic puja samagri.</p>
+            </div>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Family Satvik Lunch Spread</td>
-              <td class="price">Inc in Hotel Package</td>
-            </tr>
-            <tr>
-              <td>Ganpati Sthapna Puja Decor, Altar & Sound (Provisional)</td>
-              <td class="price">₹1,00,000</td>
-            </tr>
-          </table>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-utensils"></i></div>
+            <div class="feature-row-content">
+              <h4>Family Satvik Lunch Spread</h4>
+              <p>Regional satvik delicacies included for residential guests in the hotel package.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1967,8 +2001,71 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 16: DAY 2 SAFA & GHODI & COST -->
-  <section class="slide" id="slide-16" data-day="Day 2 Baraat" data-title="Royal Safas & Ghodi">
+  <!-- SLIDE 19: GANPATI / VIDHI — COST SHEET -->
+  <section class="slide" id="slide-19" data-day="Day 2 Cost" data-title="Ganpati / Vidhi Cost Sheet">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">COMMERCIAL PROPOSAL · DAY 2</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Element-Wise Cost Breakdown</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">Ganpati / Vidhi — Cost Sheet</h2>
+      <div class="slide-subheading" style="margin-bottom: 20px;">Itemized production elements for the morning auspicious puja</div>
+
+      <div class="cost-sheet-container">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">Ganpati Sthapna & Vidhi</div>
+            <div class="cost-sheet-subtitle">Decor · Sound · Lights · Production</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-om text-amber-700"></i> Morning Sacred Ritual</div>
+        </div>
+
+        <table class="cost-sheet-table">
+          <thead>
+            <tr>
+              <th>Element Description</th>
+              <th style="text-align:right;">Cost (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ganpati Altar Decor</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Floral Styling & Garland Setup</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Ambience Lighting</td>
+              <td class="price">₹10,000</td>
+            </tr>
+            <tr>
+              <td>Sound System</td>
+              <td class="price">₹10,000</td>
+            </tr>
+            <tr>
+              <td>Technical Support & Power Backup</td>
+              <td class="price">₹10,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td><strong>GANPATI / VIDHI PRODUCTION TOTAL (Part of ₹10L Package)</strong></td>
+              <td class="price"><strong>₹65,000</strong></td>
+            </tr>
+            <tr>
+              <td>Family Satvik Lunch Spread</td>
+              <td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; color:var(--palm-green);">Included in Hotel Package</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 20: SAFA + GHODI -->
+  <section class="slide" id="slide-20" data-day="Day 2 Baraat" data-title="Royal Safas & Ghodi">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -1978,26 +2075,32 @@ body {
         </div>
 
         <h2 class="slide-h1">Royal Safa Bandhi & Regal Ghodi</h2>
-        <div class="slide-subheading">60 Customized royal turbans with drapers & ornamented procession mare</div>
+        <div class="slide-subheading">Customized royal turbans with master drapers & ornamented procession mare</div>
         
         <p class="slide-narrative">
-          60 customized royal organza/silk safas tied by professional master drapers for the groom's entourage, paired with an ornamented royal Ghodi with attendant umbrella escort.
+          Customized royal organza/silk safas tied by professional master drapers for the groom's entourage, paired with an ornamented royal Ghodi with attendant umbrella escort.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Safa & Ghodi</span>
-            <span class="cost-card-total">₹38,000</span>
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
+          <div class="cost-sheet-header" style="padding:14px 20px;">
+            <div>
+              <div class="cost-sheet-title" style="font-size:14px;">Safa & Ghodi Commercials</div>
+              <div class="cost-sheet-subtitle">Baraat Essentials</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹38,000</div>
           </div>
-          <table class="cost-table-mini">
+          <table class="cost-sheet-table">
             <tr>
-              <td>Royal Safas (60 Pcs customized + master drapers)</td>
-              <td class="price">₹18,000</td>
+              <td style="padding:10px 20px;">Royal Safa Bandhi (Customized turbans + master drapers)</td>
+              <td class="price" style="padding:10px 20px;">₹18,000</td>
             </tr>
             <tr>
-              <td>Decorated Royal Ghodi with umbrella escort</td>
-              <td class="price">₹20,000</td>
+              <td style="padding:10px 20px;">Decorated Royal Ghodi with umbrella escort</td>
+              <td class="price" style="padding:10px 20px;">₹20,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td style="padding:12px 20px;"><strong>SAFA + GHODI TOTAL</strong></td>
+              <td class="price" style="padding:12px 20px;"><strong>₹38,000</strong></td>
             </tr>
           </table>
         </div>
@@ -2007,27 +2110,27 @@ body {
         <div class="dual-photo-grid">
           <div class="dual-photo-frame">
             <img src="assets/safa-grid.jpg" alt="Royal Safas" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-hat-cowboy"></i> 60 Royal Safas</div>
+            <div class="image-badge"><i class="fa-solid fa-hat-cowboy"></i> Royal Safa Bandhi</div>
           </div>
           <div class="dual-photo-frame">
             <img src="assets/dhol-baraat.jpg" alt="Baraat Procession" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-horse"></i> Regal Baraat Procession</div>
+            <div class="image-badge"><i class="fa-solid fa-horse"></i> Decorated Royal Ghodi</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 17: DEDICATED VINTAGE CARS (4 CAR OPTIONS) -->
-  <section class="slide" id="slide-17" data-day="Day 2 Baraat" data-title="Vintage Car Selection">
+  <!-- SLIDE 21: VINTAGE CARS -->
+  <section class="slide" id="slide-21" data-day="Day 2 Baraat" data-title="Vintage Luxury Cars">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
-        <span class="eyebrow-tag">DAY 2 · BARAAT VEHICLE OPTIONS</span>
+        <span class="eyebrow-tag">DAY 2 · BARAAT VEHICLE SELECTION</span>
         <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">Dedicated 4-Car Showcase</span>
+        <span class="eyebrow-sub">4 Luxury Vintage Car Options</span>
       </div>
 
-      <h2 class="slide-h1">Luxury Vintage Car Options</h2>
+      <h2 class="slide-h1">Vintage Luxury Car Options</h2>
       <div class="slide-subheading">Curated vintage automobiles available for the Groom's royal baraat entry</div>
 
       <div class="options-grid-4">
@@ -2039,7 +2142,7 @@ body {
               <div class="option-card-title">Rolls-Royce Classic</div>
               <div class="option-card-desc">Iconic vintage luxury sedan in pristine ivory with uniformed chauffeur.</div>
             </div>
-            <div class="option-card-price">₹35,000 / TBD</div>
+            <div class="option-card-price">₹35,000</div>
           </div>
         </div>
 
@@ -2051,7 +2154,7 @@ body {
               <div class="option-card-title">Vintage Convertible</div>
               <div class="option-card-desc">Open-top classic roadster offering panoramic views for groom's entry.</div>
             </div>
-            <div class="option-card-price">₹30,000 / TBD</div>
+            <div class="option-card-price">₹30,000</div>
           </div>
         </div>
 
@@ -2063,7 +2166,7 @@ body {
               <div class="option-card-title">Royal Beauford Tourer</div>
               <div class="option-card-desc">1930s style open tourer with chrome headlamps and running boards.</div>
             </div>
-            <div class="option-card-price">₹32,000 / TBD</div>
+            <div class="option-card-price">₹32,000</div>
           </div>
         </div>
 
@@ -2075,15 +2178,15 @@ body {
               <div class="option-card-title">Imperial Speedster</div>
               <div class="option-card-desc">Sporty retro classic with leather interiors and custom floral bonnet accents.</div>
             </div>
-            <div class="option-card-price">₹28,000 / TBD</div>
+            <div class="option-card-price">₹28,000</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 18: DEDICATED SFX PACKAGES (4 SFX OPTIONS) -->
-  <section class="slide" id="slide-18" data-day="Day 2 Baraat" data-title="SFX Package Tiers">
+  <!-- SLIDE 22: SFX PACKAGES -->
+  <section class="slide" id="slide-22" data-day="Day 2 Baraat" data-title="SFX Package Options">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
         <span class="eyebrow-tag">DAY 2 · SPECIAL EFFECTS</span>
@@ -2101,9 +2204,9 @@ body {
             <div>
               <div class="option-card-tag">Bronze Tier</div>
               <div class="option-card-title">Cold Pyro Sparkulars</div>
-              <div class="option-card-desc">8 Synchronized cold sparkular machines (indoor/outdoor safe, zero heat).</div>
+              <div class="option-card-desc">Synchronized cold sparkular fountains creating dazzling golden entry pillars (zero smoke/heat).</div>
             </div>
-            <div class="option-card-price">₹25,000 / TBD</div>
+            <div class="option-card-price">₹25,000</div>
           </div>
         </div>
 
@@ -2113,9 +2216,9 @@ body {
             <div>
               <div class="option-card-tag">Silver Tier</div>
               <div class="option-card-title">CO2 Cryo Jets & Confetti</div>
-              <div class="option-card-desc">4 High-power CO2 blast jets + dual electric stadium confetti blasters.</div>
+              <div class="option-card-desc">High-power cryo smoke blast jets and stadium electric confetti blasters.</div>
             </div>
-            <div class="option-card-price">₹40,000 / TBD</div>
+            <div class="option-card-price">₹40,000</div>
           </div>
         </div>
 
@@ -2125,9 +2228,9 @@ body {
             <div>
               <div class="option-card-tag">Gold Tier</div>
               <div class="option-card-title">Pyro Matrix & Low Fog</div>
-              <div class="option-card-desc">16 Matrix spark fountains, heavy low-lying dry ice fog for cloud walking.</div>
+              <div class="option-card-desc">Dynamic pyro spark matrix display with heavy low-lying dry ice fog for walking on clouds.</div>
             </div>
-            <div class="option-card-price">₹65,000 / TBD</div>
+            <div class="option-card-price">₹65,000</div>
           </div>
         </div>
 
@@ -2137,46 +2240,48 @@ body {
             <div>
               <div class="option-card-tag">Platinum Tier</div>
               <div class="option-card-title">Aerial Sky Show & Pyro Guns</div>
-              <div class="option-card-desc">Sky shot fireworks display + 2 handheld cryo guns for couple entry.</div>
+              <div class="option-card-desc">Grand aerial fireworks show with handheld cryo guns for an unforgettable entrance.</div>
             </div>
-            <div class="option-card-price">₹1,00,000 / TBD</div>
+            <div class="option-card-price">₹1,00,000</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 19: DAY 2 DJ ON WHEELS & DHOL & COST -->
-  <section class="slide" id="slide-19" data-day="Day 2 Baraat" data-title="DJ on Wheels & Dhol">
+  <!-- SLIDE 23: DJ ON WHEELS -->
+  <section class="slide" id="slide-23" data-day="Day 2 Baraat" data-title="DJ on Wheels & Dhol">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
           <span class="eyebrow-tag">DAY 2 · THE ROYAL BARAAT</span>
           <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Mobile Procession Audio & Dhol</span>
+          <span class="eyebrow-sub">Mobile Procession Sound</span>
         </div>
 
-        <h2 class="slide-h1">DJ on Wheels & 4 Live Dhol Troupe</h2>
-        <div class="slide-subheading">Concert sound truck procession & master live percussionists</div>
+        <h2 class="slide-h1">DJ on Wheels & Live Dhol</h2>
+        <div class="slide-subheading">High-power mobile sound truck procession & master Punjabi dhol troupe</div>
         
         <p class="slide-narrative">
-          A high-voltage mobile DJ truck delivering concert-level audio with bass bins and moving lights along the resort driveway, accompanied by 4 energetic Punjabi Dhol players.
+          A high-voltage mobile DJ truck delivering concert-level audio along the resort driveway, accompanied by 4 master live Punjabi dhol players to lead the high-energy musical procession.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · DJ & Dhol</span>
-            <span class="cost-card-total">₹25,000 + TBD</span>
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
+          <div class="cost-sheet-header" style="padding:14px 20px;">
+            <div>
+              <div class="cost-sheet-title" style="font-size:14px;">DJ on Wheels & Dhol</div>
+              <div class="cost-sheet-subtitle">Procession Music</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:15px; font-weight:800; color:var(--palm-green);">₹25,000 + Selection</div>
           </div>
-          <table class="cost-table-mini">
+          <table class="cost-sheet-table">
             <tr>
-              <td>4-Member Master Live Dhol Troupe</td>
-              <td class="price">₹25,000</td>
+              <td style="padding:10px 20px;">4-Member Live Dhol Troupe</td>
+              <td class="price" style="padding:10px 20px;">₹25,000</td>
             </tr>
             <tr>
-              <td>DJ on Wheels Mobile Sound Truck Rig</td>
-              <td class="price">TBD</td>
+              <td style="padding:10px 20px;">DJ on Wheels Mobile Sound Truck</td>
+              <td class="price" style="padding:10px 20px; font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">Price on Selection</td>
             </tr>
           </table>
         </div>
@@ -2194,8 +2299,8 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 20: DEDICATED BARAAT SWAGAT (2 WELCOME OPTIONS) -->
-  <section class="slide" id="slide-20" data-day="Day 2 Baraat" data-title="Baraat Swagat Options">
+  <!-- SLIDE 24: BARAAT SWAGAT -->
+  <section class="slide" id="slide-24" data-day="Day 2 Baraat" data-title="Baraat Swagat Options">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
         <span class="eyebrow-tag">DAY 2 · BARAAT GREETING</span>
@@ -2204,11 +2309,11 @@ body {
       </div>
 
       <h2 class="slide-h1">Baraat Swagat Options</h2>
-      <div class="slide-subheading">Traditional Aarti vs. Royal Dhol & Coconut Welcome</div>
+      <div class="slide-subheading">Traditional Aarti & Rosewater Shower vs. Royal Milni Garland Presentation</div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 14px;">
-        <div class="cost-summary-card" style="margin-top:0; padding:20px;">
-          <div style="width:100%; height:200px; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px;">
+        <div class="cost-sheet-container" style="margin-top:0; padding:20px;">
+          <div style="width:100%; height:210px; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px;">
             <img src="assets/swagat_aarti.jpg" alt="Traditional Aarti Swagat" style="width:100%; height:100%; object-fit:cover; cursor:pointer;" onclick="openLightbox(this.src)">
           </div>
           <span class="option-card-tag">Concept Option 01</span>
@@ -2216,11 +2321,11 @@ body {
           <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.5; margin-bottom:12px;">
             Brass diya aarti thalis, chandan tikka application, fragrant rosewater spritzers, and fresh rose petal showers welcoming the groom's family.
           </p>
-          <div style="font-size:12px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Inclusions: 6 Aarti Thalis, Chandan, Rosewater & Fresh Petals</div>
+          <div style="font-size:12px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Inclusions: Aarti Thalis, Chandan, Rosewater & Petals</div>
         </div>
 
-        <div class="cost-summary-card" style="margin-top:0; padding:20px;">
-          <div style="width:100%; height:200px; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px;">
+        <div class="cost-sheet-container" style="margin-top:0; padding:20px;">
+          <div style="width:100%; height:210px; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px;">
             <img src="assets/swagat_garland.jpg" alt="Royal Coconut & Garland Swagat" style="width:100%; height:100%; object-fit:cover; cursor:pointer;" onclick="openLightbox(this.src)">
           </div>
           <span class="option-card-tag">Concept Option 02</span>
@@ -2228,14 +2333,14 @@ body {
           <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.5; margin-bottom:12px;">
             Ceremonial milni garland exchange for immediate family elders, decorated fresh coconuts, and a vibrant dhol salute at the entrance gate.
           </p>
-          <div style="font-size:12px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Inclusions: 12 Milni Garlands, Decorated Coconuts & Dhol Salute</div>
+          <div style="font-size:12px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Inclusions: Milni Garlands, Decorated Coconuts & Dhol Salute</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 21: DEDICATED MOVING BAR & PREMIX BOTTLES -->
-  <section class="slide" id="slide-21" data-day="Day 2 Baraat" data-title="Moving Bar & Premixes">
+  <!-- SLIDE 25: MOVING BAR / PREMIX -->
+  <section class="slide" id="slide-25" data-day="Day 2 Baraat" data-title="Moving Bar & Premixes">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -2244,26 +2349,29 @@ body {
           <span class="eyebrow-sub">Branded Bar Setup</span>
         </div>
 
-        <h2 class="slide-h1">Mobile Moving Bar & Premixes</h2>
+        <h2 class="slide-h1">Moving Bar & Premix Bottles</h2>
         <div class="slide-subheading">Custom circular "AM" monogrammed bar, moving beverage carts & bottled premixes</div>
         
         <p class="slide-narrative">
           A bespoke lilac circular bar featuring the couple's custom gold monogram ("AM"), accompanied by moving beverage carts and handcrafted cocktail/mocktail premix bottles served fresh to guests during the baraat route.
         </p>
 
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Moving Bar</span>
-            <span class="cost-card-total">As Per Client</span>
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
+          <div class="cost-sheet-header" style="padding:14px 20px;">
+            <div>
+              <div class="cost-sheet-title" style="font-size:14px;">Moving Bar Commercials</div>
+              <div class="cost-sheet-subtitle">Procession Refreshments</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:14px; font-weight:800; color:var(--palm-green);">On Selection</div>
           </div>
-          <table class="cost-table-mini">
+          <table class="cost-sheet-table">
             <tr>
-              <td>Custom Monogrammed Circular Bar Structure</td>
-              <td class="price">Included / TBD</td>
+              <td style="padding:10px 20px;">Moving Bar Carts & Station</td>
+              <td class="price" style="padding:10px 20px; font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">Price on Selection</td>
             </tr>
             <tr>
-              <td>Moving Bar Trolleys & Premix Bottles</td>
-              <td class="price">TBD</td>
+              <td style="padding:10px 20px;">Signature Premix Cocktail Bottles</td>
+              <td class="price" style="padding:10px 20px; font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">Price on Selection</td>
             </tr>
           </table>
         </div>
@@ -2281,8 +2389,8 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 22: DEDICATED BARAAT FOOD SELECTION -->
-  <section class="slide" id="slide-22" data-day="Day 2 Baraat" data-title="Baraat Food Selection">
+  <!-- SLIDE 26: BARAAT FOOD -->
+  <section class="slide" id="slide-26" data-day="Day 2 Baraat" data-title="Baraat Food Selection">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
         <span class="eyebrow-tag">DAY 2 · BARAAT REFRESHMENTS</span>
@@ -2290,73 +2398,43 @@ body {
         <span class="eyebrow-sub">Client Food Selection Chart</span>
       </div>
 
-      <h2 class="slide-h1">Baraat Food & Beverage Selection Chart</h2>
+      <h2 class="slide-h1">Baraat Food Selection Chart</h2>
       <div class="slide-subheading">Curated finger appetizers, street snacks & hydration stations for the procession</div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 10px;">
-        <div class="cost-summary-card" style="margin-top:0;">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-utensils text-amber-700"></i> Recommended Hot Finger Appetizers</span>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Choose 4–6</span>
+        <div class="cost-sheet-container" style="margin-top:0;">
+          <div class="cost-sheet-header" style="padding:12px 20px;">
+            <div class="cost-sheet-title" style="font-size:13.5px;"><i class="fa-solid fa-utensils text-amber-700"></i> Hot Finger Appetizers</div>
+            <span style="font-size:11.5px; font-weight:700; color:var(--palm-green);">Select Options</span>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Paneer Tikka Achari / Hariyali (Tandoori skewers)</td>
-              <td class="price">Recommended</td>
-            </tr>
-            <tr>
-              <td>Mini Veg Spring Rolls & Corn Cheese Balls</td>
-              <td class="price">Recommended</td>
-            </tr>
-            <tr>
-              <td>Kathal Ki Tikki / Hara Bhara Kebab</td>
-              <td class="price">Recommended</td>
-            </tr>
-            <tr>
-              <td>Mushroom & Corn Tarts (European canapes)</td>
-              <td class="price">Recommended</td>
-            </tr>
-            <tr>
-              <td>Mini Street Pao Bhaji Cones / Wada Pao Sliders</td>
-              <td class="price">Live Stalls</td>
-            </tr>
+          <table class="cost-sheet-table">
+            <tr><td>Paneer Tikka Achari / Hariyali</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; color:var(--palm-green);">Recommended</td></tr>
+            <tr><td>Mini Veg Spring Rolls & Corn Cheese Balls</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; color:var(--palm-green);">Recommended</td></tr>
+            <tr><td>Kathal Ki Tikki & Hara Bhara Kebab</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; color:var(--palm-green);">Recommended</td></tr>
+            <tr><td>Mushroom & Corn Tarts</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; color:var(--palm-green);">Recommended</td></tr>
+            <tr><td>Mini Street Pao Bhaji Cones & Wada Pao</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; color:var(--palm-green);">Live Counters</td></tr>
           </table>
         </div>
 
-        <div class="cost-summary-card" style="margin-top:0;">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-glass-water text-amber-700"></i> Refreshments & Moving Coolers</span>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Beverage Setup</span>
+        <div class="cost-sheet-container" style="margin-top:0;">
+          <div class="cost-sheet-header" style="padding:12px 20px;">
+            <div class="cost-sheet-title" style="font-size:13.5px;"><i class="fa-solid fa-glass-water text-amber-700"></i> Beverages & Coolers</div>
+            <span style="font-size:11.5px; font-weight:700; color:var(--palm-green);">Beverage Setup</span>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Fresh Tender Coconut Water with Straws</td>
-              <td class="price">Hydration Station</td>
-            </tr>
-            <tr>
-              <td>Spicy Kokum Cooler & Cucumber Basil Spritzer</td>
-              <td class="price">Premix Bottles</td>
-            </tr>
-            <tr>
-              <td>Virgin Mojito & Blue Lagoon Mocktails</td>
-              <td class="price">Bar Service</td>
-            </tr>
-            <tr>
-              <td>Chilled Mineral Water & Soft Beverages</td>
-              <td class="price">Continuous Carts</td>
-            </tr>
-            <tr>
-              <td>Baraat Food by Hotel (Additional Package)</td>
-              <td class="price">TBD</td>
-            </tr>
+          <table class="cost-sheet-table">
+            <tr><td>Fresh Tender Coconut Water with Straws</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">Hydration Station</td></tr>
+            <tr><td>Spicy Kokum Cooler & Cucumber Basil Spritzer</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">Premix Bottles</td></tr>
+            <tr><td>Virgin Mojito & Blue Lagoon Mocktails</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">Bar Carts</td></tr>
+            <tr><td>Chilled Mineral Water & Soft Beverages</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">Continuous Service</td></tr>
+            <tr><td>Hotel Baraat Food Package</td><td class="price" style="font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; color:var(--palm-green);">Price on Selection</td></tr>
           </table>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 23: MAIN ENTRY CONCEPT 1 (LOTUS ARCH & PYRO TUNNEL) -->
-  <section class="slide" id="slide-23" data-day="Day 2 Entry" data-title="Entry Concept 1: Lotus Arch">
+  <!-- SLIDE 27: COUPLE ENTRY — OPTION 01 -->
+  <section class="slide" id="slide-27" data-day="Day 2 Entry" data-title="Entry Option 1: Lotus Arch">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -2369,24 +2447,25 @@ body {
         <div class="slide-subheading">Sculpted white & pink lotus pillars, synchronized cold sparkulars & flower shower</div>
         
         <p class="slide-narrative">
-          A grand grand entry featuring sculpted lotus-petal floral pillars connected by lush pink carnation arches. The couple enters under a canopy of chandeliers while synchronized cold pyro sparkulars fire from both flanks.
+          A grand grand entrance featuring sculpted lotus-petal floral pillars connected by lush pink carnation arches. The couple enters under a canopy of chandeliers while synchronized cold pyro sparkulars fire from both flanks.
         </p>
 
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Inclusions · Lotus Entry Concept</span>
-            <span class="cost-card-total">TBD / Included</span>
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-spa"></i></div>
+            <div class="feature-row-content">
+              <h4>Sculpted Lotus Pillars & Floral Arches</h4>
+              <p>Handcrafted 3D lotus pillars with hanging chandeliers and rose petal carpets.</p>
+            </div>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Lotus Petal Sculpted Pillars + Floral Arches + Chandeliers</td>
-              <td class="price">Included in Decor</td>
-            </tr>
-            <tr>
-              <td>Synchronized Cold Pyro Sparkular Fountain Matrix</td>
-              <td class="price">SFX Package</td>
-            </tr>
-          </table>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-fire"></i></div>
+            <div class="feature-row-content">
+              <h4>Cold Pyro Tunnel & Petal Shower</h4>
+              <p>Synchronized cold sparkular fountain matrix with aerial rose petal blasts.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -2402,8 +2481,8 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 24: MAIN ENTRY CONCEPT 2 (MIRRORED AISLE & SPIRAL PAVILION) -->
-  <section class="slide" id="slide-24" data-day="Day 2 Entry" data-title="Entry Concept 2: Mirrored Spiral">
+  <!-- SLIDE 28: COUPLE ENTRY — OPTION 02 -->
+  <section class="slide" id="slide-28" data-day="Day 2 Entry" data-title="Entry Option 2: Mirrored Spiral">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -2419,21 +2498,22 @@ body {
           A contemporary cliffside concept featuring an ultra-reflective high-gloss mirror runway flanked by continuous pastel rose hedges, leading to a circular elevated stage with an organic spiral floral ribbon structure against the Arabian Sea.
         </p>
 
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Inclusions · Mirrored Spiral Concept</span>
-            <span class="cost-card-total">TBD / Included</span>
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-water"></i></div>
+            <div class="feature-row-content">
+              <h4>Reflective Mirrored Water-Effect Runway</h4>
+              <p>High-gloss mirror runner reflecting sky and sunset, bordered by continuous flower hedges.</p>
+            </div>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Reflective Mirrored Runway + 60ft Flanking Flower Hedges</td>
-              <td class="price">Included in Decor</td>
-            </tr>
-            <tr>
-              <td>Elevated Circular Stage + Spiral Floral Sculpted Arch</td>
-              <td class="price">Included in Decor</td>
-            </tr>
-          </table>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-ring"></i></div>
+            <div class="feature-row-content">
+              <h4>Seaside Spiral Floral Arch</h4>
+              <p>Elevated circular stage with dynamic spiral floral canopy facing the sea waves.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -2449,113 +2529,342 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 25: DAY 2 MANDAP VIDHI & SUNSET PHERAS & COST -->
-  <section class="slide" id="slide-25" data-day="Day 2 Vidhi" data-title="Mandap Vidhi & Pheras">
-    <div class="widescreen-grid">
-      <div class="widescreen-left">
-        <div class="eyebrow-row">
-          <span class="eyebrow-tag">DAY 2 · SUNSET PHERAS</span>
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Sacred Beachfront Mandap</span>
+  <!-- SLIDE 29: BARAAT / ENTRY PRODUCTION — COST SHEET -->
+  <section class="slide" id="slide-29" data-day="Day 2 Cost" data-title="Baraat & Entry Cost Sheet">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">COMMERCIAL PROPOSAL · DAY 2</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Element-Wise Cost Breakdown</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">Baraat & Entry — Cost Sheet</h2>
+      <div class="slide-subheading" style="margin-bottom: 20px;">Itemized production elements for the grand procession and couple entry</div>
+
+      <div class="cost-sheet-container">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">Baraat & Couple Entry</div>
+            <div class="cost-sheet-subtitle">Decor · Sound · Lights · Production</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-horse text-amber-700"></i> Royal Procession & Entry</div>
         </div>
 
-        <h2 class="slide-h1">Mandap Vidhi & Sunset Pheras</h2>
-        <div class="slide-subheading">4-Pillar beachfront oceanfront mandap, lotus varmalas & ceremonial phera bells</div>
-        
-        <p class="slide-narrative">
-          The sacred climax of the wedding — an oceanfront mandap on the sands against the golden sunset. Guests ring handheld brass bells during the 7 Vedic pheras, supported by dedicated concert audio and lighting engineers.
-        </p>
-
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Mandap Vidhi</span>
-            <span class="cost-card-total">₹2,15,000</span>
-          </div>
-          <table class="cost-table-mini">
+        <table class="cost-sheet-table">
+          <thead>
             <tr>
-              <td>Ceremonial Handheld Phera Bells for all guests</td>
+              <th>Element Description</th>
+              <th style="text-align:right;">Cost (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Entry Decor Installation</td>
+              <td class="price">₹25,000</td>
+            </tr>
+            <tr>
+              <td>Entrance Gate Decor</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Ambience Lighting</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Decorative Lighting & Rigging</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Sound System</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Technical Support</td>
               <td class="price">₹10,000</td>
             </tr>
             <tr>
-              <td>Mandap Sound + Lights + Dedicated Sound Operator</td>
-              <td class="price">₹105,000</td>
+              <td>Power Backup & Technical Power</td>
+              <td class="price">₹10,000</td>
             </tr>
-            <tr>
-              <td>Oceanfront Beach Mandap Decor & Floral Setup (Provisional)</td>
-              <td class="price">₹1,00,000</td>
+            <tr class="cost-sheet-total-row">
+              <td><strong>BARAAT / ENTRY PRODUCTION TOTAL (Part of ₹10L Package)</strong></td>
+              <td class="price"><strong>₹1,10,000</strong></td>
             </tr>
-            <tr>
-              <td>Selfie Booth / Entrance Arch</td>
-              <td class="price">₹20,000 (Opt.)</td>
-            </tr>
-          </table>
-        </div>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 30: MANDAP & SUNSET PHERAS (WITH 4 MANDAP OPTIONS) -->
+  <section class="slide" id="slide-30" data-day="Day 2 Vidhi" data-title="Mandap Options & Pheras">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">DAY 2 · SACRED SUNSET PHERAS</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">4 Oceanfront Mandap Concepts</span>
       </div>
 
-      <div class="widescreen-right">
-        <div class="video-player-wrap">
-          <video controls poster="assets/varmala_golden_sunset.jpg">
-            <source src="assets/video_varmala_sunset.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="image-badge" style="z-index:10;"><i class="fa-solid fa-video"></i> Sunset Varmala & Beach Mandap Video</div>
+      <h2 class="slide-h1">Oceanfront Mandap Options & Sunset Pheras</h2>
+      <div class="slide-subheading">Sacred Vedic wedding mandaps on the beach sands overlooking the Arabian Sea</div>
+
+      <div class="options-grid-4" style="margin-top:16px;">
+        <div class="option-card-box">
+          <img src="assets/mandap_option_01.jpg" alt="Mandap Option 1" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Option 01</div>
+              <div class="option-card-title">Pastel Canopy Mandap</div>
+              <div class="option-card-desc">Lush 4-pillar wisteria & carnation canopy right on the sands facing the sea.</div>
+            </div>
+            <div class="option-card-price">Included in Decor</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/mandap_option_02.jpg" alt="Mandap Option 2" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Option 02</div>
+              <div class="option-card-title">Sculpted Lotus Mandap</div>
+              <div class="option-card-desc">Sculpted 3D lotus pillars with crystal chandeliers, low fog & rose petal blast.</div>
+            </div>
+            <div class="option-card-price">Included in Decor</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/mandap_option_03.jpg" alt="Mandap Option 3" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Option 03</div>
+              <div class="option-card-title">Crystal Mirrored Mandap</div>
+              <div class="option-card-desc">Full mirrored reflective pillars, crystal chandeliers & white orchid florals.</div>
+            </div>
+            <div class="option-card-price">Included in Decor</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/mandap_option_04.jpg" alt="Mandap Option 4" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Option 04</div>
+              <div class="option-card-title">Sunset Dual-Arch Mandap</div>
+              <div class="option-card-desc">Twin curved floral arches with pink rose aisle hedges leading to the beach.</div>
+            </div>
+            <div class="option-card-price">Included in Decor</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 26: DAY 2 DINNER DECOR & PRODUCTION & COST -->
-  <section class="slide" id="slide-26" data-day="Day 2 Dinner" data-title="Wedding Dinner Production">
+  <!-- SLIDE 31: MANDAP — COST SHEET -->
+  <section class="slide" id="slide-31" data-day="Day 2 Cost" data-title="Mandap Cost Sheet">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">COMMERCIAL PROPOSAL · DAY 2</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Element-Wise Cost Breakdown</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">Mandap & Sunset Pheras — Cost Sheet</h2>
+      <div class="slide-subheading" style="margin-bottom: 20px;">Itemized production elements for the beachfront mandap ceremony</div>
+
+      <div class="cost-sheet-container">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">Oceanfront Mandap & Sunset Pheras</div>
+            <div class="cost-sheet-subtitle">Decor · Sound · Lights · Production</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-water text-amber-700"></i> Beachfront Mandap</div>
+        </div>
+
+        <table class="cost-sheet-table">
+          <thead>
+            <tr>
+              <th>Element Description</th>
+              <th style="text-align:right;">Cost (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oceanfront Mandap Decor & Structure</td>
+              <td class="price">₹60,000</td>
+            </tr>
+            <tr>
+              <td>Floral Canopy Styling & Aisle Florals</td>
+              <td class="price">₹45,000</td>
+            </tr>
+            <tr>
+              <td>Mandap Ambience / Uplighting</td>
+              <td class="price">₹25,000</td>
+            </tr>
+            <tr>
+              <td>Mandap Decorative Lighting & Rigging</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Professional Sound System</td>
+              <td class="price">₹35,000</td>
+            </tr>
+            <tr>
+              <td>Sound Console & Technical Support</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Power Backup & Technical Power</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Technical Production & Stage Rigging</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td><strong>MANDAP PRODUCTION TOTAL (Part of ₹10L Package)</strong></td>
+              <td class="price"><strong>₹2,40,000</strong></td>
+            </tr>
+            <tr>
+              <td>Ceremonial Handheld Phera Bells for all guests</td>
+              <td class="price">₹10,000</td>
+            </tr>
+            <tr>
+              <td>Selfie Booth / Dedicated Entrance Arch</td>
+              <td class="price">₹20,000 (Optional)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 32: WEDDING DINNER -->
+  <section class="slide" id="slide-32" data-day="Day 2 Dinner" data-title="Wedding Dinner Staging">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
-          <span class="eyebrow-tag">DAY 2 · WEDDING FEAST</span>
+          <span class="eyebrow-tag">DAY 2 · WEDDING BANQUET</span>
           <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Starlit Banquet Staging</span>
+          <span class="eyebrow-sub">Celebratory Dinner Feast</span>
         </div>
 
-        <h2 class="slide-h1">Wedding Dinner Decor & Staging</h2>
+        <h2 class="slide-h1">Grand Wedding Dinner Banquet</h2>
         <div class="slide-subheading">Ocean lawn banqueting, royal table centerpieces & ambient illumination</div>
         
         <p class="slide-narrative">
-          A grand starlit celebration across the manicured lawns. Elegant banquet seating, customized menus on chargers, floral candelabras, warm ambient illumination, and live culinary station staging.
+          A grand starlit celebration across the manicured lawns following the sunset pheras. Elegant banquet seating, floral candelabras, warm ambient illumination, live culinary stations, and background acoustic sound.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Wedding Dinner</span>
-            <span class="cost-card-total">₹1,00,000 (Prov.)</span>
+        <div class="feature-list">
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-utensils"></i></div>
+            <div class="feature-row-content">
+              <h4>Royal Banquet Lawn Staging</h4>
+              <p>Round tables with bespoke linen, floral candelabras, charger plates, and printed menu cards.</p>
+            </div>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Wedding Dinner Decor, Sound & Lighting Staging (Provisional)</td>
-              <td class="price">₹1,00,000</td>
-            </tr>
-          </table>
+
+          <div class="feature-row">
+            <div class="feature-icon-circle"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="feature-row-content">
+              <h4>Warm Starlit Illumination</h4>
+              <p>Fairy light canopies, golden tree uplighting, and soft ambient flood lighting.</p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="widescreen-right">
         <div class="hero-image-frame" style="height: 540px;">
-          <img src="assets/dessert-buffet.jpg" alt="Wedding Dinner Feast" onclick="openLightbox(this.src)">
+          <img src="assets/dessert-buffet.jpg" alt="Wedding Dinner Setup" onclick="openLightbox(this.src)">
           <div class="image-badge"><i class="fa-solid fa-utensils"></i> Grand Wedding Banquet Setup</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 27: DAY 2 WEDDING DINNER MENUS & CHART -->
-  <section class="slide" id="slide-27" data-day="Day 2 Dinner" data-title="Grand Wedding Feast Menus">
+  <!-- SLIDE 33: WEDDING DINNER — COST SHEET -->
+  <section class="slide" id="slide-33" data-day="Day 2 Cost" data-title="Wedding Dinner Cost Sheet">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">COMMERCIAL PROPOSAL · DAY 2</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Element-Wise Cost Breakdown</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">Wedding Dinner — Cost Sheet</h2>
+      <div class="slide-subheading" style="margin-bottom: 20px;">Itemized production elements for the grand wedding banquet</div>
+
+      <div class="cost-sheet-container">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">Grand Wedding Dinner Banquet</div>
+            <div class="cost-sheet-subtitle">Decor · Sound · Lights · Production</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-utensils text-amber-700"></i> Starlit Lawn Banquet</div>
+        </div>
+
+        <table class="cost-sheet-table">
+          <thead>
+            <tr>
+              <th>Element Description</th>
+              <th style="text-align:right;">Cost (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wedding Dinner Decor Setup</td>
+              <td class="price">₹30,000</td>
+            </tr>
+            <tr>
+              <td>Table Styling & Linen Styling</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Floral Centrepieces & Candelabras</td>
+              <td class="price">₹20,000</td>
+            </tr>
+            <tr>
+              <td>Entrance & Pathway Decor</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Ambience Lighting</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Decorative Lighting & Rigging</td>
+              <td class="price">₹15,000</td>
+            </tr>
+            <tr>
+              <td>Professional Sound System</td>
+              <td class="price">₹10,000</td>
+            </tr>
+            <tr>
+              <td>Technical Support & Power Backup</td>
+              <td class="price">₹10,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td><strong>WEDDING DINNER PRODUCTION TOTAL (Part of ₹10L Package)</strong></td>
+              <td class="price"><strong>₹1,35,000</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 34: WEDDING DINNER MENU -->
+  <section class="slide" id="slide-34" data-day="Day 2 Food" data-title="Wedding Dinner Menu">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
         <span class="eyebrow-tag">DAY 2 · FOOD & BEVERAGE</span>
         <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">Grand Wedding Feast Menu</span>
+        <span class="eyebrow-sub">Wedding Feast Menu</span>
       </div>
 
-      <h2 class="slide-h1">Grand Wedding Feast & Compendium Menu Chart</h2>
+      <h2 class="slide-h1">Grand Wedding Feast Menu & Upgrades</h2>
       <div class="slide-subheading">Included dinner feast + live seafood & international counter additions</div>
 
       <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; margin-top: 10px;">
@@ -2569,11 +2878,11 @@ body {
             <tbody>
               <tr>
                 <td>
-                  • <strong>4 Veg Starters (90 mins):</strong> Paneer Tikka, Kebab Seekh, Spring Rolls, Cheese Balls<br>
+                  • <strong>4 Veg Starters (90 mins):</strong> Paneer Tikka Achari, Hara Bhara Kebab, Spring Rolls, Cheese Balls<br>
                   • <strong>2 Live Stations (Veg):</strong> Pasta Station / Chaat Counter<br>
                   • <strong>Soups & Salads:</strong> 1 Veg Soup, 4 Curated Salads, 1 Curd Prep<br>
-                  • <strong>Main Course:</strong> 5 Veg Mains (Paneer Butter Masala, Subz Nizami, Kofta Curry), 1 Dal Tadka/Makhani<br>
-                  • <strong>Rice & Breads:</strong> 2 Rice Preps (Dum Biryani + Steamed), Assorted Naan & Kulcha<br>
+                  • <strong>5 Veg Main Course:</strong> Paneer Butter Masala, Subz Nizami, Kofta Curry, Aloo Gobi, Mix Veg<br>
+                  • <strong>Dal, Rice & Breads:</strong> 1 Dal Makhani, 2 Rice Preps (Dum Biryani + Steamed), Assorted Naan & Kulcha<br>
                   • <strong>Desserts:</strong> 3 Desserts (Gulab Jamun, Rasmalai, Moong Dal Halwa) + 2 Ice Creams
                 </td>
               </tr>
@@ -2581,40 +2890,113 @@ body {
           </table>
         </div>
 
-        <div class="cost-summary-card" style="margin-top:0;">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-plus text-amber-700"></i> Optional Live Station Upgrades</span>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Compendium Rates</span>
+        <div class="cost-sheet-container" style="margin-top:0;">
+          <div class="cost-sheet-header" style="padding:12px 20px;">
+            <div class="cost-sheet-title" style="font-size:13px;"><i class="fa-solid fa-plus text-amber-700"></i> Optional Live Station Upgrades</div>
+            <span style="font-size:11.5px; font-weight:700; color:var(--palm-green);">Compendium Rates</span>
           </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Asian Noodle & Dim Sum Live Counter</td>
-              <td class="price">₹400 ++</td>
-            </tr>
-            <tr>
-              <td>Burmese Khow Suey & Laksa Station</td>
-              <td class="price">₹450 ++</td>
-            </tr>
-            <tr>
-              <td>Sushi Assortment & Japanese Yakitori</td>
-              <td class="price">₹650 ++</td>
-            </tr>
-            <tr>
-              <td>Korean Mixed Grills & Satay</td>
-              <td class="price">₹750 ++</td>
-            </tr>
-            <tr>
-              <td>Fresh Jalebi with Rabri & Churros Station</td>
-              <td class="price">₹250 ++</td>
-            </tr>
+          <table class="cost-sheet-table">
+            <tr><td>Asian Noodle & Dim Sum Live Counter</td><td class="price">₹400 ++</td></tr>
+            <tr><td>Burmese Khow Suey & Laksa Station</td><td class="price">₹450 ++</td></tr>
+            <tr><td>Sushi Assortment & Japanese Yakitori</td><td class="price">₹650 ++</td></tr>
+            <tr><td>Korean Mixed Grills & Satay</td><td class="price">₹750 ++</td></tr>
+            <tr><td>Fresh Jalebi with Rabri & Churros Station</td><td class="price">₹250 ++</td></tr>
           </table>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 28: ADDITIONAL ESSENTIALS · PHOTOGRAPHY -->
-  <section class="slide" id="slide-28" data-day="Essentials" data-title="Photography & Cinematography">
+  <!-- SLIDE 35: ADDITIONAL ESSENTIALS OVERVIEW -->
+  <section class="slide" id="slide-35" data-day="Essentials" data-title="Additional Essentials Overview">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Complete Operational Services</span>
+      </div>
+
+      <h2 class="slide-h1">Additional Essentials Overview</h2>
+      <div class="slide-subheading">Professional photography, management crew, logistics fleet, licensing & hampers</div>
+
+      <div class="options-grid-4" style="grid-template-columns: repeat(3, 1fr); margin-top:20px;">
+        <div class="option-card-box">
+          <img src="assets/photographer_team.jpg" alt="Photography" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Photography & Film</div>
+              <div class="option-card-title">2-Day Coverage (5–7 Team)</div>
+              <div class="option-card-desc">Traditional, Candid, Drone, TLB & Cinematic Wedding Film.</div>
+            </div>
+            <div class="option-card-price">₹3,50,000</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/welcome-roses.jpg" alt="Management Team" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Event Management</div>
+              <div class="option-card-title">Ensemble Management Team</div>
+              <div class="option-card-desc">Comprehensive hospitality, RSVP, production & 6 personal shadows.</div>
+            </div>
+            <div class="option-card-price">₹4,50,000</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/car_decor_luxury.jpg" alt="Logistics Fleet" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Transportation Fleet</div>
+              <div class="option-card-title">Logistics & Transfers</div>
+              <div class="option-card-desc">Airport & station transfers, luggage fleet & inter-resort shuttles.</div>
+            </div>
+            <div class="option-card-price">₹2,00,000</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/beach-mandap.jpg" alt="Licenses" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Statutory Permits</div>
+              <div class="option-card-title">Licenses & Permissions</div>
+              <div class="option-card-desc">IPRS, PPL, NOVEX copyright music & administrative clearances.</div>
+            </div>
+            <div class="option-card-price">₹6,00,000 (Prov. ₹9L)</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/hamper-bag.jpg" alt="Hampers" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Room Hospitality</div>
+              <div class="option-card-title">Welcome Hampers</div>
+              <div class="option-card-desc">Customized monogrammed tote bags with gourmet Goan treats.</div>
+            </div>
+            <div class="option-card-price">₹37,000</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/bartender_cocktails.jpg" alt="Bartenders" class="option-card-img" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Mixology Team</div>
+              <div class="option-card-title">Professional Bartenders</div>
+              <div class="option-card-desc">Flair bartenders, signature cocktail menus & bar props.</div>
+            </div>
+            <div class="option-card-price">On Selection</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 36: PHOTOGRAPHY / CINEMATOGRAPHY -->
+  <section class="slide" id="slide-36" data-day="Essentials" data-title="Photography & Film">
     <div class="widescreen-grid">
       <div class="widescreen-left">
         <div class="eyebrow-row">
@@ -2623,23 +3005,25 @@ body {
           <span class="eyebrow-sub">Visual Documentation</span>
         </div>
 
-        <h2 class="slide-h1">Photography & Cinematography Team</h2>
+        <h2 class="slide-h1">Photography & Cinematography</h2>
         <div class="slide-subheading">2-Day master coverage by 5–7 specialist wedding visual artists</div>
         
         <p class="slide-narrative">
           Complete traditional lens-based (TLB) and contemporary candid documentation. Includes 2-day traditional & candid photographers, cinematic wedding film teaser, full ceremony edits, drone aerial cinematography, and high-res digital albums.
         </p>
 
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Photography</span>
-            <span class="cost-card-total">₹3,50,000</span>
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
+          <div class="cost-sheet-header" style="padding:14px 20px;">
+            <div>
+              <div class="cost-sheet-title" style="font-size:14px;">Photography & Cinematography</div>
+              <div class="cost-sheet-subtitle">2-Day Coverage (5–7 Members)</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹3,50,000</div>
           </div>
-          <table class="cost-table-mini">
+          <table class="cost-sheet-table">
             <tr>
-              <td>5–7 Member Master Team (Traditional + Candid + Drone + Teasers)</td>
-              <td class="price">₹3,50,000</td>
+              <td style="padding:12px 20px;">Traditional + Candid + Drone + TLB + Cinematic Wedding Film</td>
+              <td class="price" style="padding:12px 20px;">₹3,50,000</td>
             </tr>
           </table>
         </div>
@@ -2654,307 +3038,273 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 29: ADDITIONAL ESSENTIALS · EVENT MANAGEMENT TEAM -->
-  <section class="slide" id="slide-29" data-day="Essentials" data-title="21-Member Management Team">
-    <div class="widescreen-grid">
-      <div class="widescreen-left">
-        <div class="eyebrow-row">
-          <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">On-Ground Crew</span>
-        </div>
-
-        <h2 class="slide-h1">21-Member On-Ground Management Team</h2>
-        <div class="slide-subheading">18–20 Crew Specialists + 1 Central RSVP + 6 Personal VIP Shadows</div>
-        
-        <p class="slide-narrative">
-          A dedicated crew managing 3 hospitality desks, 3 logistics leads, 2 F&B floor leads, 2 production leads, 2 hamper managers, 1 client servicing lead, 1 vendor coordinator, and 6 dedicated shadows for Bride, Groom & both Parents.
-        </p>
-
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Management Team</span>
-            <span class="cost-card-total">₹4,50,000</span>
-          </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Complete 21-Member Professional On-Ground Team (2 Days)</td>
-              <td class="price">₹4,50,000</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="widescreen-right">
-        <div class="cost-summary-card" style="margin-top:0; height:540px; overflow-y:auto;">
-          <h4 style="font-family:'Cinzel',serif; font-size:14px; margin-bottom:10px;"><i class="fa-solid fa-users text-amber-700"></i> Team Allocation Breakdown</h4>
-          <table class="cost-table-mini" style="font-size:12.5px;">
-            <tr><td><strong>3 Hospitality Leads</strong> — 2 Lobby Desks & Room Key Handover</td><td class="price">3</td></tr>
-            <tr><td><strong>3 Logistics Leads</strong> — Fleet dispatch, airport & luggage</td><td class="price">3</td></tr>
-            <tr><td><strong>6 Personal Shadows</strong> — Bride, Groom, Bride Parents, Groom Parents</td><td class="price">6</td></tr>
-            <tr><td><strong>2 F&B Managers</strong> — Plate counts, fresh food & refills</td><td class="price">2</td></tr>
-            <tr><td><strong>2 Production Leads</strong> — Florals, rigging & changeovers</td><td class="price">2</td></tr>
-            <tr><td><strong>2 Hamper / Showflow Leads</strong> — Room hampers & backstage cues</td><td class="price">2</td></tr>
-            <tr><td><strong>1 RSVP Specialist</strong> — Flight rosters & room mapping</td><td class="price">1</td></tr>
-            <tr><td><strong>1 Client Servicing Lead</strong> — Single point family contact</td><td class="price">1</td></tr>
-            <tr><td><strong>1 Vendor Specialist</strong> — DJ, sound, light, priest liaison</td><td class="price">1</td></tr>
-            <tr style="background:var(--palm-light); font-weight:800;"><td><strong>TOTAL ON-GROUND CREW</strong></td><td class="price">21 Specialists</td></tr>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 30: ADDITIONAL ESSENTIALS · LOGISTICS FLEET -->
-  <section class="slide" id="slide-30" data-day="Essentials" data-title="Logistics Fleet Movement">
-    <div class="widescreen-grid">
-      <div class="widescreen-left">
-        <div class="eyebrow-row">
-          <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Transportation & Fleet</span>
-        </div>
-
-        <h2 class="slide-h1">Logistics & Fleet Movement</h2>
-        <div class="slide-subheading">44 Dedicated airport & railway station pickups, drop-offs & luggage vans</div>
-        
-        <p class="slide-narrative">
-          Complete fleet management covering both Goa airports (Dabolim & Mopa) and Madgaon railway station. Coordinated dispatch rosters, VIP sedans, Innova fleets, luggage trucks, and inter-resort shuttle services.
-        </p>
-
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Logistics</span>
-            <span class="cost-card-total">₹2,00,000</span>
-          </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>44 Pickup & Drop Fleet Transfers + Luggage Vans</td>
-              <td class="price">₹2,00,000</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="widescreen-right">
-        <div class="quad-photo-grid">
-          <div class="quad-photo-frame">
-            <img src="assets/azaya_slide_01.png" alt="Resort Portico" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-van-shuttle"></i> Main Portico Arrivals</div>
-          </div>
-          <div class="quad-photo-frame">
-            <img src="assets/welcome-roses.jpg" alt="Guest Escort" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-user-check"></i> Guest Concierge Escort</div>
-          </div>
-          <div class="quad-photo-frame">
-            <img src="assets/car_decor_luxury.jpg" alt="Fleet Vehicles" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-car-side"></i> Dedicated Fleet</div>
-          </div>
-          <div class="quad-photo-frame">
-            <img src="assets/hamper-bag.jpg" alt="Luggage Transfer" onclick="openLightbox(this.src)">
-            <div class="image-badge"><i class="fa-solid fa-suitcase"></i> Luggage Dispatch</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 31: ADDITIONAL ESSENTIALS · BARTENDERS -->
-  <section class="slide" id="slide-31" data-day="Essentials" data-title="Professional Bartenders">
-    <div class="widescreen-grid">
-      <div class="widescreen-left">
-        <div class="eyebrow-row">
-          <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Bar & Mixology</span>
-        </div>
-
-        <h2 class="slide-h1">Professional Mixologists & Bartenders</h2>
-        <div class="slide-subheading">Flair bartenders, artisanal cocktails, ice sculpts & glassware management</div>
-        
-        <p class="slide-narrative">
-          Experienced mixology crew delivering customized cocktail menus, rapid bar service, premium glassware styling, smoke infusion, and customized bar props for the evening reception and after party.
-        </p>
-
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Bartenders</span>
-            <span class="cost-card-total">TBD</span>
-          </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Professional Flair Bartenders & Mixology Team (2 Days)</td>
-              <td class="price">TBD</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="widescreen-right">
-        <div class="hero-image-frame" style="height: 540px;">
-          <img src="assets/bartender_cocktails.jpg" alt="Bartender Cocktails" onclick="openLightbox(this.src)">
-          <div class="image-badge"><i class="fa-solid fa-martini-glass-citrus"></i> Professional Flair Mixologists</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 32: ADDITIONAL ESSENTIALS · LICENSES & CLEARANCES -->
-  <section class="slide" id="slide-32" data-day="Essentials" data-title="Statutory Licenses">
-    <div class="widescreen-grid">
-      <div class="widescreen-left">
-        <div class="eyebrow-row">
-          <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">Statutory Approvals</span>
-        </div>
-
-        <h2 class="slide-h1">Licenses & Government Permissions</h2>
-        <div class="slide-subheading">IPRS, PPL, NOVEX, Sound NOC & local administrative clearances</div>
-        
-        <p class="slide-narrative">
-          Complete statutory compliance management ensuring uninterrupted music, commercial sound permissions, local police liaison, coastal zone sound notifications, and copyright licenses.
-        </p>
-
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Licenses</span>
-            <span class="cost-card-total">₹6,00,000 (Prov. ₹9L)</span>
-          </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>IPRS, PPL, NOVEX Copyright Music Licenses</td>
-              <td class="price">₹600,000</td>
-            </tr>
-            <tr>
-              <td>Comprehensive Licensing & Sound NOC Provisioning</td>
-              <td class="price">₹900,000 (Max)</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="widescreen-right">
-        <div class="hero-image-frame" style="height: 540px;">
-          <img src="assets/beach-mandap.jpg" alt="Compliant Event Grounds" onclick="openLightbox(this.src)">
-          <div class="image-badge"><i class="fa-solid fa-certificate"></i> 100% Fully Compliant Event Operations</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 33: ADDITIONAL ESSENTIALS · HAMPERS & PRINTING -->
-  <section class="slide" id="slide-33" data-day="Essentials" data-title="Welcome Hampers & Stationery">
-    <div class="widescreen-grid">
-      <div class="widescreen-left">
-        <div class="eyebrow-row">
-          <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
-          <span class="eyebrow-dot"></span>
-          <span class="eyebrow-sub">In-Room Gifting & Branding</span>
-        </div>
-
-        <h2 class="slide-h1">Bespoke Room Hampers & Stationery</h2>
-        <div class="slide-subheading">35–40 Monogrammed welcome tote hampers & personalized event collateral</div>
-        
-        <p class="slide-narrative">
-          Luxury welcome bags placed in each guest room prior to check-in. Custom couple monogramming, artisanal Goan treats, cashew nuts, recovery essentials, pocket itinerary cards, keycard jackets, and luggage tags.
-        </p>
-
-        <!-- Itemized Cost Summary Box -->
-        <div class="cost-summary-card">
-          <div class="cost-card-header">
-            <span class="cost-card-title"><i class="fa-solid fa-receipt text-amber-700"></i> Event Cost Summary · Hampers</span>
-            <span class="cost-card-total">₹37,000 + TBD</span>
-          </div>
-          <table class="cost-table-mini">
-            <tr>
-              <td>Customized Monogrammed Hampers (35–40 Keys)</td>
-              <td class="price">₹37,000</td>
-            </tr>
-            <tr>
-              <td>Event Printing, Keycard Holders & Luggage Tags</td>
-              <td class="price">TBD</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="widescreen-right">
-        <div class="hero-image-frame" style="height: 540px;">
-          <img src="assets/hamper-bag.jpg" alt="Welcome Hampers" onclick="openLightbox(this.src)">
-          <div class="image-badge"><i class="fa-solid fa-gift"></i> Bespoke Room Welcome Hampers</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLIDE 34: MASTER CONSOLIDATED EVENT COSTING & SUMMARY SHEET -->
-  <section class="slide" id="slide-34" data-day="Master Costing" data-title="Master Consolidated Costing">
+  <!-- SLIDE 37: EVENT MANAGEMENT + LOGISTICS -->
+  <section class="slide" id="slide-37" data-day="Essentials" data-title="Management & Logistics">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
-        <span class="eyebrow-tag">MASTER BUDGET PROPOSAL</span>
+        <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
         <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">Consolidated Commercials</span>
+        <span class="eyebrow-sub">Operations & Transportation</span>
       </div>
 
-      <h2 class="slide-h1">Master Event Costing & Package Summary</h2>
-      <div class="slide-subheading">Complete financial breakdown matching the client's Excel costing model</div>
+      <h2 class="slide-h1">Event Management & Logistics Fleet</h2>
+      <div class="slide-subheading">Comprehensive guest hospitality, timeline management & coordinated transportation fleet</div>
 
-      <div class="master-table-wrap">
-        <table class="master-table">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 14px;">
+        <div class="cost-sheet-container" style="margin-top:0; padding:20px;">
+          <div class="cost-sheet-header" style="padding:0 0 12px 0; border-bottom:1px solid var(--border-subtle);">
+            <div>
+              <div class="cost-sheet-title">Ensemble Management Team</div>
+              <div class="cost-sheet-subtitle">On-Ground Service Categories</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹4,50,000</div>
+          </div>
+          <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.55; margin:12px 0;">
+            • Client Servicing & Family Coordination<br>
+            • 2 Lobby Hospitality Desks & Check-in Concierge<br>
+            • Dedicated RSVP & Flight Tracking<br>
+            • F&B Operations & Plate Count Supervision<br>
+            • Production & Vendor Management<br>
+            • 6 Dedicated Personal Shadows (Bride, Groom, Bride Parents, Groom Parents)
+          </p>
+          <div style="font-size:12px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Dedicated 2-Day Professional Management</div>
+        </div>
+
+        <div class="cost-sheet-container" style="margin-top:0; padding:20px;">
+          <div class="cost-sheet-header" style="padding:0 0 12px 0; border-bottom:1px solid var(--border-subtle);">
+            <div>
+              <div class="cost-sheet-title">Logistics & Transportation Fleet</div>
+              <div class="cost-sheet-subtitle">Fleet Dispatch</div>
+            </div>
+            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹2,00,000</div>
+          </div>
+          <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.55; margin:12px 0;">
+            • Airport Transfers (Dabolim & Mopa Airports)<br>
+            • Madgaon Railway Station Transfers<br>
+            • Guest Fleet Coordination & VIP Sedans<br>
+            • Luggage Movement Fleet & Vans<br>
+            • Inter-Resort Shuttle Movements<br>
+            • On-Ground Transport Dispatch Officers
+          </p>
+          <div style="font-size:12px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Complete Transportation Fleet Management</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 38: BARTENDERS + LICENSES + HAMPERS -->
+  <section class="slide" id="slide-38" data-day="Essentials" data-title="Bartenders, Licenses & Hampers">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">ADDITIONAL ESSENTIALS</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Specialist Services</span>
+      </div>
+
+      <h2 class="slide-h1">Bartenders, Licenses & Welcome Hampers</h2>
+      <div class="slide-subheading">Mixology crew, statutory permits & customized room gifting</div>
+
+      <div class="options-grid-4" style="grid-template-columns: repeat(3, 1fr); margin-top:20px;">
+        <div class="option-card-box">
+          <img src="assets/bartender_cocktails.jpg" alt="Bartenders" class="option-card-img" style="height:200px;" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Mixology Team</div>
+              <div class="option-card-title">Professional Bartenders</div>
+              <div class="option-card-desc">Flair bartenders, signature cocktail menus, bar styling and glassware management.</div>
+            </div>
+            <div class="option-card-price">On Selection</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/beach-mandap.jpg" alt="Licenses" class="option-card-img" style="height:200px;" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">Statutory Permits</div>
+              <div class="option-card-title">Licenses & Permissions</div>
+              <div class="option-card-desc">IPRS, PPL, NOVEX Copyright Music Licenses & Sound NOC permissions.</div>
+            </div>
+            <div class="option-card-price">₹6,00,000 (Prov. up to ₹9L)</div>
+          </div>
+        </div>
+
+        <div class="option-card-box">
+          <img src="assets/hamper-bag.jpg" alt="Hampers" class="option-card-img" style="height:200px;" onclick="openLightbox(this.src)">
+          <div class="option-card-body">
+            <div>
+              <div class="option-card-tag">In-Room Gifting</div>
+              <div class="option-card-title">Welcome Hampers</div>
+              <div class="option-card-desc">Customized monogrammed tote hampers with artisanal Goan treats & recovery kits.</div>
+            </div>
+            <div class="option-card-price">₹37,000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 39: MASTER DECOR + SOUND + LIGHTS COST (EXACT ₹10,00,000) -->
+  <section class="slide" id="slide-39" data-day="Master Production" data-title="Master Production Costing">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">MASTER PRODUCTION COMMERCIAL</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Event-Wise Production Summary</span>
+      </div>
+
+      <h2 class="slide-h1" style="margin-bottom: 4px;">Decor + Sound + Lights — Production Cost</h2>
+      <div class="slide-subheading" style="margin-bottom: 18px;">Consolidated event-wise production subtotals across the entire wedding celebration</div>
+
+      <div class="cost-sheet-container" style="max-width: 980px;">
+        <div class="cost-sheet-header">
+          <div>
+            <div class="cost-sheet-title">DECOR + SOUND + LIGHTS</div>
+            <div class="cost-sheet-subtitle">Event-Wise Production Summary</div>
+          </div>
+          <div class="info-chip"><i class="fa-solid fa-calculator text-amber-700"></i> Full Production Scope</div>
+        </div>
+
+        <table class="cost-sheet-table">
           <thead>
             <tr>
-              <th>Scope Component</th>
-              <th>Details & Inclusions</th>
+              <th>Event / Function</th>
+              <th>Designated Production Scope</th>
               <th style="text-align:right;">Subtotal (₹)</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Venue + Stay + Food Package</strong></td>
-              <td>35 Keys / 70 Residential Pax / 2 Days (Buffet Breakfast, Lunch & Dinner Included)</td>
-              <td style="text-align:right; font-weight:700;">₹30,00,000</td>
+              <td><strong>Day 1: White Wedding</strong></td>
+              <td>Ceremony decor, altar florals, ambience lighting, sound system & power backup</td>
+              <td class="price">₹90,000</td>
             </tr>
             <tr>
-              <td><strong>2-Day Decor Package</strong></td>
-              <td>Church florals, Reception lawn, Ganpati altar, Baraat setups & Beach Mandap</td>
-              <td style="text-align:right; font-weight:700;">₹15,00,000</td>
+              <td><strong>Day 1: Formal Dinner / Reception</strong></td>
+              <td>Dinner decor, stage florals, table styling, entrance arch, lighting & sound system</td>
+              <td class="price">₹2,05,000</td>
             </tr>
             <tr>
-              <td><strong>Ensemble Management Team</strong></td>
-              <td>21 Specialists (18–20 Crew + 1 RSVP + 6 Dedicated Personal Shadows)</td>
-              <td style="text-align:right; font-weight:700;">₹4,50,000</td>
+              <td><strong>Day 1: After Party</strong></td>
+              <td>Welcome board, entrance, dance floor, sound console fascia, club sound & lights</td>
+              <td class="price">₹1,55,000</td>
             </tr>
             <tr>
-              <td><strong>Sound + Lights + Operator</strong></td>
-              <td>Dual sound rigs, intelligent moving heads, concert lighting & stage operators</td>
-              <td style="text-align:right; font-weight:700;">₹3,30,000</td>
+              <td><strong>Day 2: Ganpati / Vidhi</strong></td>
+              <td>Ganpati altar decor, floral styling, ambience lighting, sound & technical support</td>
+              <td class="price">₹65,000</td>
             </tr>
             <tr>
-              <td><strong>Additional 2-Day Event Scope</strong></td>
-              <td>Church setup, Car decor, Cake, Host, Giveaways, Safas, Ghodi, Dhol, Phera bells, Photos (₹3.5L), Logistics (₹2L), Hampers (₹37K), Licenses (₹6L)</td>
-              <td style="text-align:right; font-weight:700;">₹20,80,000</td>
+              <td><strong>Day 2: Baraat / Entry</strong></td>
+              <td>Entry decor, entrance gate, ambience lighting, sound system & power backup</td>
+              <td class="price">₹1,10,000</td>
             </tr>
-            <tr class="master-total-row">
-              <td><strong>TOTAL OVERALL WEDDING PROPOSAL</strong></td>
-              <td>Comprehensive 360° Luxury Wedding Production & Hospitality Scope</td>
-              <td style="text-align:right; color:var(--terracotta); font-size:16px;">₹73,60,000</td>
+            <tr>
+              <td><strong>Day 2: Mandap & Sunset Pheras</strong></td>
+              <td>Oceanfront beach mandap structure, floral canopy, lighting, sound system & operator</td>
+              <td class="price">₹2,40,000</td>
+            </tr>
+            <tr>
+              <td><strong>Day 2: Wedding Dinner</strong></td>
+              <td>Wedding dinner decor, table styling, floral centrepieces, lighting & sound system</td>
+              <td class="price">₹1,35,000</td>
+            </tr>
+            <tr class="cost-sheet-total-row">
+              <td colspan="2"><strong>MASTER PRODUCTION TOTAL (DECOR + SOUND + LIGHTS)</strong></td>
+              <td class="price" style="font-size:20px; color:var(--palm-green);"><strong>₹10,00,000</strong></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p style="font-size:11.5px; color:var(--ink-muted); margin-top:8px;">
-        *Note: Applicable statutory government taxes (GST 18% / VAT 22%) extra as per standard regulatory norms.
-      </p>
     </div>
   </section>
 
-  <!-- SLIDE 35: THANK YOU -->
-  <section class="slide" id="slide-35" data-day="Thank You" data-title="Thank You">
+  <!-- SLIDE 40: MASTER COMMERCIAL SUMMARY -->
+  <section class="slide" id="slide-40" data-day="Commercial Summary" data-title="Master Commercial Summary">
+    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
+      <div class="eyebrow-row">
+        <span class="eyebrow-tag">MASTER COMMERCIAL PROPOSAL</span>
+        <span class="eyebrow-dot"></span>
+        <span class="eyebrow-sub">Consolidated Commercial Structure</span>
+      </div>
+
+      <h2 class="slide-h1">Master Commercial Summary</h2>
+      <div class="slide-subheading">Transparent overview of core package commercials and optional event selections</div>
+
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; margin-top: 10px;">
+        <div class="master-table-wrap" style="margin-top:0;">
+          <table class="master-table">
+            <thead>
+              <tr>
+                <th>Core Commercial Package</th>
+                <th style="text-align:right;">Subtotal (₹)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Venue & Resort Package (Azaya Beach Resort)</strong><br>
+                  <span style="font-size:11.5px; color:var(--ink-muted);">35 Keys / 70 Residential Pax / 2 Days (Buffet Breakfast, Lunch & Dinner Included)</span>
+                </td>
+                <td style="text-align:right; font-weight:700;">₹30,00,000</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Decor + Sound + Lights (Master Production)</strong><br>
+                  <span style="font-size:11.5px; color:var(--ink-muted);">Complete 2-day production scope across all 7 functions</span>
+                </td>
+                <td style="text-align:right; font-weight:700;">₹10,00,000</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Additional Essentials Package:</strong><br>
+                  <span style="font-size:11.5px; color:var(--ink-muted);">
+                    • Photography & Cinematography (5–7 Team): ₹3,50,000<br>
+                    • Ensemble Management Team (21 Specialists): ₹4,50,000<br>
+                    • Logistics Fleet Transfers: ₹2,00,000<br>
+                    • Statutory Licensing Standard Provision: ₹6,00,000 (Max ₹9L)<br>
+                    • In-Room Welcome Hampers: ₹37,000
+                  </span>
+                </td>
+                <td style="text-align:right; font-weight:700;">₹16,37,000</td>
+              </tr>
+              <tr class="master-total-row">
+                <td><strong>CORE PROPOSAL TOTAL</strong></td>
+                <td style="text-align:right; font-size:17px; color:var(--palm-green);"><strong>₹56,37,000</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cost-sheet-container" style="margin-top:0; padding:18px;">
+          <div class="cost-sheet-header" style="padding:0 0 10px 0; border-bottom:1px solid var(--border-subtle);">
+            <div>
+              <div class="cost-sheet-title" style="font-size:13.5px;"><i class="fa-solid fa-list-check text-amber-700"></i> Optional / Selected Items</div>
+              <div class="cost-sheet-subtitle">A-la-carte Additions</div>
+            </div>
+          </div>
+          <table class="cost-sheet-table" style="font-size:12px;">
+            <tr><td>Church Essentials (Wine, Cake, Bouquet)</td><td class="price">₹50,000</td></tr>
+            <tr><td>Couple Car Fresh Floral Decor</td><td class="price">₹20,000</td></tr>
+            <tr><td>3-Tier Architectural Wedding Cake</td><td class="price">₹15,000 ++</td></tr>
+            <tr><td>Celebrity Emcee / Anchor Host</td><td class="price">₹50,000</td></tr>
+            <tr><td>Giveaways (Photo Booth + Brooches)</td><td class="price">₹50,000</td></tr>
+            <tr><td>Royal Safas (₹18K) + Ghodi (₹20K)</td><td class="price">₹38,000</td></tr>
+            <tr><td>4-Member Live Punjabi Dhol Troupe</td><td class="price">₹25,000</td></tr>
+            <tr><td>Ceremonial Handheld Phera Bells</td><td class="price">₹10,000</td></tr>
+            <tr><td>Selfie Booth / Dedicated Arch</td><td class="price">₹20,000 Opt.</td></tr>
+            <tr><td>Vintage Cars (4 Car Options)</td><td class="price">On Selection</td></tr>
+            <tr><td>SFX Packages (4 Tier Options)</td><td class="price">On Selection</td></tr>
+            <tr><td>DJ on Wheels & Moving Bar</td><td class="price">On Selection</td></tr>
+            <tr><td>Liquor & Food Counter Upgrades</td><td class="price">On Selection</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 41: THANK YOU -->
+  <section class="slide" id="slide-41" data-day="Thank You" data-title="Thank You">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
       <img src="assets/ensemble_logo.png" alt="Ensemble Events Logo" style="max-width: 260px; height: auto; margin-bottom: 18px;">
       
@@ -2963,7 +3313,7 @@ body {
       <div class="slide-subheading" style="font-size: 23px; margin-bottom: 20px;">Ms. Ayushi Desai & Mr. Amit D</div>
       
       <p style="max-width: 660px; font-size: 15.5px; line-height: 1.65; color: var(--ink-secondary); margin-bottom: 28px;">
-        It is our true honor to curate and produce this landmark coastal wedding celebration for you. We look forward to bringing this dream celebration to life on the sands of Goa.
+        It is our true honor to curate, design, and produce this landmark coastal wedding celebration for you. We look forward to bringing this dream celebration to life on the sands of Goa.
       </p>
 
       <div class="chip-group" style="justify-content: center; margin-bottom: 28px;">
@@ -2978,54 +3328,6 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 36: DISCLAIMER & GUIDELINES -->
-  <section class="slide" id="slide-36" data-day="Guidelines" data-title="Terms & Guidelines">
-    <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
-      <div class="eyebrow-row">
-        <span class="eyebrow-tag">EVENT GUIDELINES & NOTICE</span>
-        <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">General Terms & Policies</span>
-      </div>
-
-      <h2 class="slide-h1">Terms, Conditions & Guidelines</h2>
-      <div class="slide-subheading">Standard operating guidelines, sound regulations, licensing and resort protocols</div>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 10px;">
-        <div class="cost-summary-card" style="margin-top:0;">
-          <h4 style="font-family:'Cinzel',serif; font-size:14.5px; color:var(--ink-primary); margin-bottom:8px;">
-            <i class="fa-solid fa-file-contract text-amber-700"></i> 1. Scope & Booking Confirmation
-          </h4>
-          <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.55; margin-bottom:14px;">
-            This proposal outlines the design specifications, logistical operations, and commercial costing for the wedding festivities across 30th & 31st January 2026.
-          </p>
-
-          <h4 style="font-family:'Cinzel',serif; font-size:14.5px; color:var(--ink-primary); margin-bottom:8px;">
-            <i class="fa-solid fa-certificate text-amber-700"></i> 2. Statutory Permits & Licensing
-          </h4>
-          <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.55;">
-            All necessary event permissions (IPRS, PPL, NOVEX, Sound NOC) are coordinated and processed prior to the event dates by Ensemble Events.
-          </p>
-        </div>
-
-        <div class="cost-summary-card" style="margin-top:0;">
-          <h4 style="font-family:'Cinzel',serif; font-size:14.5px; color:var(--ink-primary); margin-bottom:8px;">
-            <i class="fa-solid fa-handshake text-amber-700"></i> 3. Hospitality & Coordination
-          </h4>
-          <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.55; margin-bottom:14px;">
-            Dedicated on-ground production, 6 personal shadows, and 21 crew members ensure flawless coordination between ceremonies, dining venues, and accommodation.
-          </p>
-
-          <h4 style="font-family:'Cinzel',serif; font-size:14.5px; color:var(--ink-primary); margin-bottom:8px;">
-            <i class="fa-solid fa-shield-halved text-amber-700"></i> 4. Resort Policies & Sound Timings
-          </h4>
-          <p style="font-size:12.5px; color:var(--ink-secondary); line-height:1.55;">
-            Outdoor music guidelines adhere to coastal zone regulations (outdoor sound transitioned by 10:00 PM to air-conditioned indoor banquet and club spaces).
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <!-- Bottom Dock -->
@@ -3034,7 +3336,7 @@ body {
     <i class="fa-solid fa-chevron-left"></i> Prev
   </button>
 
-  <span class="dock-counter" id="dockSlideLabel">01 / 36</span>
+  <span class="dock-counter" id="dockSlideLabel">01 / 41</span>
 
   <button class="btn-dock-icon" id="btnGridToggle" title="Slide Overview Grid">
     <i class="fa-solid fa-grip"></i>
@@ -3067,45 +3369,50 @@ body {
 
 <script>
 let currentSlide = 1;
-const totalSlides = 36;
+const totalSlides = 41;
 
 const slideData = [
-  { no: 1, day: "Cover", title: "Cover Page" },
-  { no: 2, day: "Index", title: "Presentation Index" },
-  { no: 3, day: "Itinerary", title: "Master Itinerary (Journey)" },
-  { no: 4, day: "Venue Tour", title: "Azaya Resort Grounds" },
-  { no: 5, day: "Decor Mood", title: "Decor Inspiration & Moodboard" },
-  { no: 6, day: "Day 1", title: "White Wedding Essentials & Cost" },
-  { no: 7, day: "Day 1", title: "Couple Car Styling & Cost" },
-  { no: 8, day: "Day 1", title: "Reception Cake, Host & Cost" },
-  { no: 9, day: "Day 1", title: "Reception Giveaways & Cost" },
-  { no: 10, day: "Day 1", title: "Dinner Decor & Production Cost" },
-  { no: 11, day: "Day 1 Food", title: "Food Menu Included (Page 1)" },
-  { no: 12, day: "Day 1 Food", title: "Additional Menu Options (Page 2)" },
-  { no: 13, day: "Day 1", title: "Late Night After Party & Cost" },
-  { no: 14, day: "Day 2", title: "Morning Breakfast & Hospitality" },
-  { no: 15, day: "Day 2", title: "Ganpati Sthapna & Lunch Cost" },
-  { no: 16, day: "Day 2 Baraat", title: "Royal Safas & Ghodi Cost" },
-  { no: 17, day: "Day 2 Baraat", title: "Vintage Luxury Car Options" },
-  { no: 18, day: "Day 2 Baraat", title: "SFX Package Options" },
-  { no: 19, day: "Day 2 Baraat", title: "DJ on Wheels & Dhol Cost" },
-  { no: 20, day: "Day 2 Baraat", title: "Baraat Swagat Options" },
-  { no: 21, day: "Day 2 Baraat", title: "Moving Bar & Premix Bottles" },
-  { no: 22, day: "Day 2 Baraat", title: "Baraat Food Selection Chart" },
-  { no: 23, day: "Day 2 Entry", title: "Entry Concept 1: Lotus Arch" },
-  { no: 24, day: "Day 2 Entry", title: "Entry Concept 2: Mirrored Spiral" },
-  { no: 25, day: "Day 2 Vidhi", title: "Mandap Vidhi & Pheras Cost" },
-  { no: 26, day: "Day 2 Dinner", title: "Wedding Dinner Production Cost" },
-  { no: 27, day: "Day 2 Dinner", title: "Grand Wedding Feast Menus" },
-  { no: 28, day: "Essentials", title: "Photography & Video Cost" },
-  { no: 29, day: "Essentials", title: "21-Member Team Cost" },
-  { no: 30, day: "Essentials", title: "Logistics Fleet Cost" },
-  { no: 31, day: "Essentials", title: "Professional Bartenders" },
-  { no: 32, day: "Essentials", title: "Statutory Licenses Cost" },
-  { no: 33, day: "Essentials", title: "Welcome Hampers Cost" },
-  { no: 34, day: "Master Costing", title: "Master Event Budget (₹73.6L)" },
-  { no: 35, day: "Thank You", title: "Thank You" },
-  { no: 36, day: "Guidelines", title: "Terms & Guidelines" }
+  { no: 1, day: "Cover", title: "The Wedding Proposal" },
+  { no: 2, day: "Index", title: "Index & Journey Roadmap" },
+  { no: 3, day: "Venue", title: "Azaya Resort Grounds" },
+  { no: 4, day: "Decor", title: "Decor Inspiration & Moodboard" },
+  { no: 5, day: "Day 1", title: "Breakfast & Guest Welcome" },
+  { no: 6, day: "Day 1", title: "White Wedding Ceremony" },
+  { no: 7, day: "Day 1 Cost", title: "White Wedding Cost Sheet" },
+  { no: 8, day: "Day 1", title: "Couple Car Styling & Decor" },
+  { no: 9, day: "Day 1", title: "Formal Dinner & Reception" },
+  { no: 10, day: "Day 1 Cost", title: "Formal Dinner Cost Sheet" },
+  { no: 11, day: "Day 1", title: "Cake, Host & Bar Commercials" },
+  { no: 12, day: "Day 1", title: "Guest Giveaways & Photo Booth" },
+  { no: 13, day: "Day 1 Food", title: "Day 1 Included Dinner Menu" },
+  { no: 14, day: "Day 1 Food", title: "Additional Food Options Chart" },
+  { no: 15, day: "Day 1", title: "Late Night After Party" },
+  { no: 16, day: "Day 1 Cost", title: "After Party Cost Sheet" },
+  { no: 17, day: "Day 2", title: "Day 2 Morning Breakfast" },
+  { no: 18, day: "Day 2", title: "Ganpati Sthapna & Satvik Lunch" },
+  { no: 19, day: "Day 2 Cost", title: "Ganpati / Vidhi Cost Sheet" },
+  { no: 20, day: "Day 2 Baraat", title: "Royal Safas & Regal Ghodi" },
+  { no: 21, day: "Day 2 Baraat", title: "Vintage Luxury Car Options" },
+  { no: 22, day: "Day 2 Baraat", title: "SFX Package Options" },
+  { no: 23, day: "Day 2 Baraat", title: "DJ on Wheels & Dhol Troupe" },
+  { no: 24, day: "Day 2 Baraat", title: "Baraat Swagat Options" },
+  { no: 25, day: "Day 2 Baraat", title: "Moving Bar & Premix Bottles" },
+  { no: 26, day: "Day 2 Baraat", title: "Baraat Food Selection Chart" },
+  { no: 27, day: "Day 2 Entry", title: "Entry Option 1: Lotus Arch" },
+  { no: 28, day: "Day 2 Entry", title: "Entry Option 2: Mirrored Spiral" },
+  { no: 29, day: "Day 2 Cost", title: "Baraat & Entry Cost Sheet" },
+  { no: 30, day: "Day 2 Vidhi", title: "Oceanfront Mandap Options" },
+  { no: 31, day: "Day 2 Cost", title: "Mandap & Pheras Cost Sheet" },
+  { no: 32, day: "Day 2 Dinner", title: "Grand Wedding Dinner Banquet" },
+  { no: 33, day: "Day 2 Cost", title: "Wedding Dinner Cost Sheet" },
+  { no: 34, day: "Day 2 Food", title: "Wedding Dinner Menu & Upgrades" },
+  { no: 35, day: "Essentials", title: "Additional Essentials Overview" },
+  { no: 36, day: "Essentials", title: "Photography & Cinematography" },
+  { no: 37, day: "Essentials", title: "Event Management & Logistics" },
+  { no: 38, day: "Essentials", title: "Bartenders, Licenses & Hampers" },
+  { no: 39, day: "Master Production", title: "₹10L Production Master Summary" },
+  { no: 40, day: "Master Summary", title: "Master Commercial Summary" },
+  { no: 41, day: "Thank You", title: "Thank You" }
 ];
 
 function updateSlideUI() {
@@ -3117,7 +3424,7 @@ function updateSlideUI() {
   });
 
   const progressPct = ((currentSlide - 1) / (totalSlides - 1)) * 100;
-  document.getElementById('progressBar').style.width = Math.max(3, progressPct) + '%';
+  document.getElementById('progressBar').style.width = Math.max(2.5, progressPct) + '%';
   const label = `${String(currentSlide).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
   document.getElementById('navSlideLabel').innerText = label;
   document.getElementById('dockSlideLabel').innerText = label;
