@@ -272,8 +272,8 @@ body {
 }
 
 .slide-narrative {
-  font-size: 14.5px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.65;
   color: var(--ink-secondary);
   margin-bottom: 20px;
   max-width: 650px;
@@ -296,62 +296,62 @@ body {
 }
 
 .feature-icon-circle {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--bg-muted);
   color: var(--palm-green);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13.5px;
+  font-size: 14px;
   flex-shrink: 0;
   margin-top: 2px;
 }
 
 .feature-row-content h4 {
   font-family: 'Cinzel', serif;
-  font-size: 14px;
+  font-size: 14.5px;
   font-weight: 700;
   color: var(--ink-primary);
   margin-bottom: 3px;
 }
 
 .feature-row-content p {
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--ink-secondary);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
-/* Pointer Card */
+/* Pointer Card for Slide 28 */
 .pointer-card {
   background: #FFFFFF;
-  border: 1px solid var(--border-subtle);
+  border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 16px 20px;
-  margin-bottom: 10px;
-  border-left: 4px solid var(--palm-green);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  border-left: 5px solid var(--palm-green);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.03);
 }
 
 .pointer-card h4 {
   font-family: 'Cinzel', serif;
-  font-size: 13.5px;
+  font-size: 14.5px;
   font-weight: 800;
   color: var(--ink-primary);
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .pointer-card p {
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--ink-secondary);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
-/* Cost Sheet Container */
+/* Cost Sheet Container for Slide 29 */
 .cost-sheet-container {
   width: 100%;
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
   background: #FFFFFF;
   border: 1.5px solid var(--border-subtle);
@@ -371,14 +371,14 @@ body {
 
 .cost-sheet-title {
   font-family: 'Cinzel', serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 800;
   color: var(--ink-primary);
   letter-spacing: 1px;
 }
 
 .cost-sheet-subtitle {
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: 700;
   color: var(--terracotta);
   text-transform: uppercase;
@@ -395,7 +395,7 @@ body {
   background: var(--bg-surface);
   padding: 16px 32px;
   font-family: 'Cinzel', serif;
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 800;
   color: var(--ink-secondary);
   letter-spacing: 1px;
@@ -403,8 +403,8 @@ body {
 }
 
 .cost-sheet-table td {
-  padding: 15px 32px;
-  font-size: 14.5px;
+  padding: 16px 32px;
+  font-size: 15px;
   color: var(--ink-primary);
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
@@ -413,7 +413,7 @@ body {
   text-align: right;
   font-weight: 700;
   font-family: 'Cinzel', serif;
-  font-size: 15px;
+  font-size: 15.5px;
 }
 
 .cost-sheet-total-row {
@@ -422,15 +422,15 @@ body {
 }
 
 .cost-sheet-total-row td {
-  padding: 18px 32px;
-  font-size: 15.5px;
+  padding: 20px 32px;
+  font-size: 16.5px;
   color: var(--palm-green);
   border-top: 2px solid var(--palm-green);
   border-bottom: none;
 }
 
 .cost-sheet-total-row td.price {
-  font-size: 19px;
+  font-size: 20px;
   color: var(--palm-green);
 }
 
@@ -462,7 +462,7 @@ body {
   border-radius: var(--radius-md);
   padding: 14px 20px;
   font-family: 'Cinzel', serif;
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
   display: flex;
@@ -650,6 +650,47 @@ body {
   width: fit-content;
 }
 
+/* Interactive Carousel Slider for Slide 8 */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  margin-top: 14px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.carousel-card {
+  min-width: calc(25% - 15px);
+  background: #FFFFFF;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.carousel-card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
 /* Video Player Wrapper */
 .video-player-wrap {
   width: 100%;
@@ -687,7 +728,7 @@ body {
 }
 
 .menu-card-column {
-  padding: 24px 28px;
+  padding: 26px 30px;
   border-right: 1px solid var(--border-subtle);
 }
 
@@ -697,11 +738,11 @@ body {
 
 .menu-column-header {
   font-family: 'Cinzel', serif;
-  font-size: 14.5px;
+  font-size: 15px;
   font-weight: 800;
   color: var(--ink-primary);
-  padding-bottom: 10px;
-  margin-bottom: 14px;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
   border-bottom: 2px solid var(--palm-green);
   display: flex;
   align-items: center;
@@ -710,13 +751,13 @@ body {
 
 .menu-item-list {
   list-style: none;
-  font-size: 13.5px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.75;
   color: var(--ink-secondary);
 }
 
 .menu-item-list li {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .menu-item-list strong {
@@ -755,7 +796,7 @@ body {
   background: var(--bg-surface);
   padding: 16px 24px;
   font-family: 'Cinzel', serif;
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 800;
   color: var(--ink-secondary);
   letter-spacing: 1px;
@@ -763,8 +804,8 @@ body {
 }
 
 .master-table td {
-  padding: 14px 24px;
-  font-size: 14px;
+  padding: 15px 24px;
+  font-size: 14.5px;
   color: var(--ink-primary);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   vertical-align: middle;
@@ -782,7 +823,7 @@ body {
 .master-total-row td {
   padding: 18px 24px;
   color: var(--palm-green);
-  font-size: 15.5px;
+  font-size: 16px;
   border-top: 2px solid var(--palm-green);
 }
 
@@ -1013,6 +1054,9 @@ body {
   }
   .index-card-grid, .options-grid-4, .menu-card-grid {
     grid-template-columns: 1fr;
+  }
+  .carousel-card {
+    min-width: 100%;
   }
 }
 
@@ -1275,7 +1319,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 05: MOODBOARD (MANDAP / PHERA DESIGN DIRECTION) -->
+  <!-- SLIDE 05: MOODBOARD AS PER MANDAP -->
   <section class="slide" id="slide-5" data-day="Moodboard" data-title="Mandap Design Moodboard">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -1342,7 +1386,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 06: WHITE WEDDING (NO CHURCH DECOR FOCUS) -->
+  <!-- SLIDE 06: WHITE WEDDING (REMOVE CHURCH DECOR) -->
   <section class="slide" id="slide-6" data-day="Day 1" data-title="White Wedding Ceremony">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -1393,7 +1437,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 07: COUPLE CAR (NO PRICING - 2 HIGH-QUALITY CAR PHOTOS) -->
+  <!-- SLIDE 07: COUPLE CAR (2 DECORATED CARS & NO PRICING) -->
   <section class="slide" id="slide-7" data-day="Day 1" data-title="Couple Car Styling">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -1444,71 +1488,85 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 08: EVENING EXPERIENCES (4-IMAGE CAROUSEL SHOWCASE) -->
+  <!-- SLIDE 08: EVENING EXPERIENCES (4 PHOTOS IN SLIDING MOTION) -->
   <section class="slide" id="slide-8" data-day="Day 1" data-title="Evening Experiences">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
-      <div class="eyebrow-row">
-        <span class="eyebrow-tag">DAY 1 · FORMAL EVENING GALA</span>
-        <span class="eyebrow-dot"></span>
-        <span class="eyebrow-sub">4 Signature Experiences</span>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 12px;">
+        <div>
+          <div class="eyebrow-row" style="margin-bottom: 6px;">
+            <span class="eyebrow-tag">DAY 1 · FORMAL EVENING GALA</span>
+            <span class="eyebrow-dot"></span>
+            <span class="eyebrow-sub">4 Signature Experiences</span>
+          </div>
+          <h2 class="slide-h1">Evening Gala Experiences</h2>
+          <div class="slide-subheading" style="margin-bottom:0;">Curated moments of celebration, entertainment and hospitality across the oceanfront lawn</div>
+        </div>
+
+        <div style="display: flex; gap: 8px;">
+          <button class="btn-dock-icon" onclick="slideCarousel(-1)" title="Previous Experience" style="background:#FFFFFF; color:var(--ink-primary); border:1px solid var(--border-subtle);">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="btn-dock-icon" onclick="slideCarousel(1)" title="Next Experience" style="background:#FFFFFF; color:var(--ink-primary); border:1px solid var(--border-subtle);">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
 
-      <h2 class="slide-h1">Evening Gala Experiences</h2>
-      <div class="slide-subheading">Curated moments of celebration, entertainment and hospitality across the oceanfront lawn</div>
-
-      <div class="options-grid-4" style="margin-top:18px;">
-        <div class="option-card-box">
-          <img src="assets/cake_4tier_luxury.jpg" alt="4-Tier Wedding Cake" class="option-card-img" onclick="openLightbox(this.src)">
-          <div class="option-card-body">
-            <div>
-              <div class="option-card-tag">Experience 01</div>
-              <div class="option-card-title">4-Tier Luxury Cake</div>
-              <div class="option-card-desc">Architectural 4-tier customized fondant cake with ceremonial stage cutting table.</div>
+      <div class="carousel-container">
+        <div class="carousel-track" id="experienceTrack">
+          <div class="carousel-card">
+            <img src="assets/cake_4tier_luxury.jpg" alt="4-Tier Wedding Cake" onclick="openLightbox(this.src)">
+            <div class="carousel-card-body">
+              <div>
+                <div class="option-card-tag">Experience 01</div>
+                <div class="option-card-title">4-Tier Luxury Cake</div>
+                <div class="option-card-desc">Architectural 4-tier customized fondant cake with ceremonial stage cutting table.</div>
+              </div>
+              <div class="option-card-price">₹15,000 ++</div>
             </div>
-            <div class="option-card-price">₹15,000 ++</div>
           </div>
-        </div>
 
-        <div class="option-card-box">
-          <img src="assets/wedding_emcee_host.jpg" alt="English-Speaking Emcee" class="option-card-img" onclick="openLightbox(this.src)">
-          <div class="option-card-body">
-            <div>
-              <div class="option-card-tag">Experience 02</div>
-              <div class="option-card-title">English-Speaking Emcee</div>
-              <div class="option-card-desc">Professional wedding host conducting the couple entry, toasts, games & speeches.</div>
+          <div class="carousel-card">
+            <img src="assets/wedding_emcee_host.jpg" alt="English-Speaking Emcee" onclick="openLightbox(this.src)">
+            <div class="carousel-card-body">
+              <div>
+                <div class="option-card-tag">Experience 02</div>
+                <div class="option-card-title">English-Speaking Emcee</div>
+                <div class="option-card-desc">Professional wedding host conducting the couple entry, toasts, games & speeches.</div>
+              </div>
+              <div class="option-card-price">₹50,000</div>
             </div>
-            <div class="option-card-price">₹50,000</div>
           </div>
-        </div>
 
-        <div class="option-card-box">
-          <img src="assets/evening_production_stage.jpg" alt="Decor, Sound & Lights" class="option-card-img" onclick="openLightbox(this.src)">
-          <div class="option-card-body">
-            <div>
-              <div class="option-card-tag">Experience 03</div>
-              <div class="option-card-title">Decor, Sound & Lights</div>
-              <div class="option-card-desc">Starlit oceanfront lawn staging, dual sound rigs, ambient illumination & florals.</div>
+          <div class="carousel-card">
+            <img src="assets/evening_production_stage.jpg" alt="Decor, Sound & Lights" onclick="openLightbox(this.src)">
+            <div class="carousel-card-body">
+              <div>
+                <div class="option-card-tag">Experience 03</div>
+                <div class="option-card-title">Decor, Sound & Lights</div>
+                <div class="option-card-desc">Starlit oceanfront lawn staging, dual sound rigs, ambient illumination & florals.</div>
+              </div>
+              <div class="option-card-price">Production Package</div>
             </div>
-            <div class="option-card-price">Production Package</div>
           </div>
-        </div>
 
-        <div class="option-card-box">
-          <img src="assets/luxury_liquor_bar.jpg" alt="Liquor Counter" class="option-card-img" onclick="openLightbox(this.src)">
-          <div class="option-card-body">
-            <div>
-              <div class="option-card-tag">Experience 04</div>
-              <div class="option-card-title">Premium Bar Counter</div>
-              <div class="option-card-desc">Full bar setup, mixology cocktail service, ice sculpts & glassware management.</div>
+          <div class="carousel-card">
+            <img src="assets/luxury_liquor_bar.jpg" alt="Liquor Counter" onclick="openLightbox(this.src)">
+            <div class="carousel-card-body">
+              <div>
+                <div class="option-card-tag">Experience 04</div>
+                <div class="option-card-title">Premium Bar Counter</div>
+                <div class="option-card-desc">Full bar setup, mixology cocktail service, ice sculpts & glassware management.</div>
+              </div>
+              <div class="option-card-price" style="background:var(--bg-muted); color:var(--ink-primary);">As Per Consumption</div>
             </div>
-            <div class="option-card-price" style="background:var(--bg-muted); color:var(--ink-primary);">As Per Consumption</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 09: GIVEAWAYS (PHOTOBOOTH, 4 MALA OPTIONS & POTLI) -->
+  <!-- SLIDE 09: GIVEAWAYS (PHOTOBOOTH FRAMES, 4 MALA COLLAGE & POTLI) -->
   <section class="slide" id="slide-9" data-day="Day 1" data-title="Guest Giveaways">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
@@ -1522,7 +1580,7 @@ body {
 
       <div class="options-grid-4" style="grid-template-columns: repeat(3, 1fr); margin-top:20px;">
         <div class="option-card-box">
-          <img src="assets/photobooth_framed_prints.jpg" alt="Framed Photo Prints" class="option-card-img" style="height:220px;" onclick="openLightbox(this.src)">
+          <img src="assets/photobooth_framed_prints.jpg" alt="Framed Photo Prints" class="option-card-img" style="height:230px;" onclick="openLightbox(this.src)">
           <div class="option-card-body">
             <div>
               <div class="option-card-tag">Instant Keepsake</div>
@@ -1534,7 +1592,7 @@ body {
         </div>
 
         <div class="option-card-box">
-          <img src="assets/mala_garland_options.jpg" alt="4 Mala Options" class="option-card-img" style="height:220px;" onclick="openLightbox(this.src)">
+          <img src="assets/mala_garland_options.jpg" alt="4 Mala Options" class="option-card-img" style="height:230px;" onclick="openLightbox(this.src)">
           <div class="option-card-body">
             <div>
               <div class="option-card-tag">Garland Selection</div>
@@ -1546,7 +1604,7 @@ body {
         </div>
 
         <div class="option-card-box">
-          <img src="assets/wedding_potli_bags.jpg" alt="Wedding Potli Bags" class="option-card-img" style="height:220px;" onclick="openLightbox(this.src)">
+          <img src="assets/wedding_potli_bags.jpg" alt="Wedding Potli Bags" class="option-card-img" style="height:230px;" onclick="openLightbox(this.src)">
           <div class="option-card-body">
             <div>
               <div class="option-card-tag">Traditional Gifting</div>
@@ -1605,7 +1663,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 11: FOOD / MENU (IMPROVED SPACIOUS 3-COLUMN HOTEL MENU CARD) -->
+  <!-- SLIDE 11: FOOD / MENU (SPACIOUS 3-COLUMN HOTEL MENU CARD) -->
   <section class="slide" id="slide-11" data-day="Day 1 Food" data-title="Included Food Menu">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
@@ -1670,8 +1728,8 @@ body {
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 14px;">
         <div class="cost-sheet-container" style="margin-top:0;">
           <div class="cost-sheet-header" style="padding:16px 24px;">
-            <div class="cost-sheet-title" style="font-size:14.5px;"><i class="fa-solid fa-fire-burner text-amber-700"></i> Live Culinary Stations</div>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Per Person</span>
+            <div class="cost-sheet-title" style="font-size:15px;"><i class="fa-solid fa-fire-burner text-amber-700"></i> Live Culinary Stations</div>
+            <span style="font-size:12.5px; font-weight:700; color:var(--palm-green);">Per Person</span>
           </div>
           <table class="cost-sheet-table">
             <tr><td>Standard Live Counters (Pao Bhaji, Chaat, Dosas, Pasta, Noodle Bar)</td><td class="price">₹250 ++</td></tr>
@@ -1685,8 +1743,8 @@ body {
 
         <div class="cost-sheet-container" style="margin-top:0;">
           <div class="cost-sheet-header" style="padding:16px 24px;">
-            <div class="cost-sheet-title" style="font-size:14.5px;"><i class="fa-solid fa-martini-glass-citrus text-amber-700"></i> Beverage & High Tea Packages</div>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Per Person</span>
+            <div class="cost-sheet-title" style="font-size:15px;"><i class="fa-solid fa-martini-glass-citrus text-amber-700"></i> Beverage & High Tea Packages</div>
+            <span style="font-size:12.5px; font-weight:700; color:var(--palm-green);">Per Person</span>
           </div>
           <table class="cost-sheet-table">
             <tr><td>Mocktail Package (Choose 4 for 3 Hours - Mojito, Cran-Dandy, etc.)</td><td class="price">₹550 ++</td></tr>
@@ -1701,7 +1759,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 13: PRODUCTION ELEMENTS (NO QUANTITIES) -->
+  <!-- SLIDE 13: PRODUCTION ELEMENTS (NO NUMBERS - DETAILED ELEMENT LIST) -->
   <section class="slide" id="slide-13" data-day="Production" data-title="Production Scope Elements">
     <div style="width: 100%; min-height: calc(100vh - 176px); display: flex; flex-direction: column; justify-content: center;">
       <div class="eyebrow-row">
@@ -1714,11 +1772,11 @@ body {
       <div class="slide-subheading">Comprehensive production elements provided without technical procurement jargon</div>
 
       <div class="options-grid-4" style="grid-template-columns: repeat(3, 1fr); margin-top:20px;">
-        <div class="cost-sheet-container" style="margin-top:0; padding:22px;">
-          <h4 style="font-family:'Cinzel',serif; font-size:15px; margin-bottom:12px; color:var(--palm-green);">
+        <div class="cost-sheet-container" style="margin-top:0; padding:24px;">
+          <h4 style="font-family:'Cinzel',serif; font-size:16px; margin-bottom:14px; color:var(--palm-green);">
             <i class="fa-solid fa-wand-magic-sparkles mr-2"></i> Decor & Lighting
           </h4>
-          <ul style="list-style:none; font-size:13.5px; line-height:1.7; color:var(--ink-secondary);">
+          <ul style="list-style:none; font-size:14px; line-height:1.8; color:var(--ink-secondary);">
             <li>• Main Stage / Ceremonial Backdrop</li>
             <li>• Floral Styling & Floral Runners</li>
             <li>• Ambient Illumination</li>
@@ -1728,11 +1786,11 @@ body {
           </ul>
         </div>
 
-        <div class="cost-sheet-container" style="margin-top:0; padding:22px;">
-          <h4 style="font-family:'Cinzel',serif; font-size:15px; margin-bottom:12px; color:var(--palm-green);">
+        <div class="cost-sheet-container" style="margin-top:0; padding:24px;">
+          <h4 style="font-family:'Cinzel',serif; font-size:16px; margin-bottom:14px; color:var(--palm-green);">
             <i class="fa-solid fa-volume-high mr-2"></i> Professional Sound
           </h4>
-          <ul style="list-style:none; font-size:13.5px; line-height:1.7; color:var(--ink-secondary);">
+          <ul style="list-style:none; font-size:14px; line-height:1.8; color:var(--ink-secondary);">
             <li>• Professional Event Sound System</li>
             <li>• Sound Mixing Console & Audio Rig</li>
             <li>• Dedicated Sound Operator & Engineer</li>
@@ -1742,11 +1800,11 @@ body {
           </ul>
         </div>
 
-        <div class="cost-sheet-container" style="margin-top:0; padding:22px;">
-          <h4 style="font-family:'Cinzel',serif; font-size:15px; margin-bottom:12px; color:var(--palm-green);">
+        <div class="cost-sheet-container" style="margin-top:0; padding:24px;">
+          <h4 style="font-family:'Cinzel',serif; font-size:16px; margin-bottom:14px; color:var(--palm-green);">
             <i class="fa-solid fa-bolt mr-2"></i> Technical Production
           </h4>
-          <ul style="list-style:none; font-size:13.5px; line-height:1.7; color:var(--ink-secondary);">
+          <ul style="list-style:none; font-size:14px; line-height:1.8; color:var(--ink-secondary);">
             <li>• Technical Execution & Truss Rigging</li>
             <li>• Dedicated Power Backup & Silent Gensets</li>
             <li>• On-Ground Technical Support Crew</li>
@@ -1772,18 +1830,18 @@ body {
         <h2 class="slide-h1">Day 2 Morning Breakfast</h2>
         <div class="slide-subheading">Gourmet buffet breakfast, live egg stations, South Indian & bakery spreads</div>
         
-        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px; padding:22px;">
-          <h4 style="font-family:'Cinzel',serif; font-size:15px; margin-bottom:12px; color:var(--ink-primary); border-bottom:1px solid var(--border-subtle); padding-bottom:8px;">
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px; padding:24px;">
+          <h4 style="font-family:'Cinzel',serif; font-size:16px; margin-bottom:14px; color:var(--ink-primary); border-bottom:1px solid var(--border-subtle); padding-bottom:8px;">
             <i class="fa-solid fa-mug-saucer text-amber-700 mr-2"></i> Breakfast Menu
           </h4>
-          <ul style="list-style:none; font-size:13.5px; line-height:1.7; color:var(--ink-secondary);">
+          <ul style="list-style:none; font-size:14px; line-height:1.75; color:var(--ink-secondary);">
             <li>• <strong>Live South Indian:</strong> Crisp Dosas, Uttapams, Idli, Vada, Chutneys & Sambar</li>
             <li>• <strong>Live Egg Station:</strong> Made-to-order omelets, scrambled & poached eggs</li>
             <li>• <strong>Bakery Selection:</strong> Fresh croissants, muffins, danish pastries & artisan breads</li>
             <li>• <strong>Health & Wellness:</strong> Seasonal sliced fruits, Greek yogurt, cereals & honey</li>
             <li>• <strong>Beverages:</strong> Fresh tropical fruit juices, premium teas & freshly brewed filter coffee</li>
           </ul>
-          <div style="margin-top:14px; font-size:12.5px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Included in Hotel Package</div>
+          <div style="margin-top:16px; font-size:13px; font-weight:700; color:var(--palm-green);"><i class="fa-solid fa-check mr-1"></i> Included in Hotel Package</div>
         </div>
       </div>
 
@@ -1796,7 +1854,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 15: GANPATI STHAPNA -->
+  <!-- SLIDE 15: GANPATI STHAPNA (AUTHENTIC WEDDING BACKDROP) -->
   <section class="slide" id="slide-15" data-day="Day 2" data-title="Ganpati Sthapna & Satvik Lunch">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -1861,23 +1919,23 @@ body {
         <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
           <div class="cost-sheet-header" style="padding:14px 20px;">
             <div>
-              <div class="cost-sheet-title" style="font-size:14.5px;">Safa & Ghodi Commercials</div>
+              <div class="cost-sheet-title" style="font-size:15px;">Safa & Ghodi Commercials</div>
               <div class="cost-sheet-subtitle">Baraat Essentials</div>
             </div>
-            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹38,000</div>
+            <div style="font-family:'Cinzel',serif; font-size:17px; font-weight:800; color:var(--palm-green);">₹38,000</div>
           </div>
           <table class="cost-sheet-table">
             <tr>
-              <td style="padding:12px 20px;">Royal Safa Bandhi (Customized turbans + master drapers)</td>
-              <td class="price" style="padding:12px 20px;">₹18,000</td>
+              <td style="padding:13px 20px;">Royal Safa Bandhi (Customized turbans + master drapers)</td>
+              <td class="price" style="padding:13px 20px;">₹18,000</td>
             </tr>
             <tr>
-              <td style="padding:12px 20px;">Decorated Royal Ghodi with umbrella escort</td>
-              <td class="price" style="padding:12px 20px;">₹20,000</td>
+              <td style="padding:13px 20px;">Decorated Royal Ghodi with umbrella escort</td>
+              <td class="price" style="padding:13px 20px;">₹20,000</td>
             </tr>
             <tr class="cost-sheet-total-row">
-              <td style="padding:14px 20px;"><strong>SAFA + GHODI TOTAL</strong></td>
-              <td class="price" style="padding:14px 20px;"><strong>₹38,000</strong></td>
+              <td style="padding:15px 20px;"><strong>SAFA + GHODI TOTAL</strong></td>
+              <td class="price" style="padding:15px 20px;"><strong>₹38,000</strong></td>
             </tr>
           </table>
         </div>
@@ -2039,11 +2097,11 @@ body {
         <h2 class="slide-h1">DJ on Wheels & Baraat Vibe</h2>
         <div class="slide-subheading">High-voltage mobile music truck leading an electrifying procession</div>
         
-        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px; padding:22px;">
-          <h4 style="font-family:'Cinzel',serif; font-size:15px; margin-bottom:14px; color:var(--ink-primary); border-bottom:1px solid var(--border-subtle); padding-bottom:8px;">
+        <div class="cost-sheet-container" style="max-width:100%; margin-top:14px; padding:24px;">
+          <h4 style="font-family:'Cinzel',serif; font-size:16px; margin-bottom:14px; color:var(--ink-primary); border-bottom:1px solid var(--border-subtle); padding-bottom:8px;">
             <i class="fa-solid fa-bolt text-amber-700 mr-2"></i> The Baraat Experience
           </h4>
-          <ul style="list-style:none; font-size:13.5px; line-height:1.75; color:var(--ink-secondary);">
+          <ul style="list-style:none; font-size:14px; line-height:1.8; color:var(--ink-secondary);">
             <li><i class="fa-solid fa-check text-amber-700 mr-2"></i> <strong>High-energy Baraat Experience</strong> across the entire resort driveway</li>
             <li><i class="fa-solid fa-check text-amber-700 mr-2"></i> <strong>Mobile DJ Setup</strong> delivering continuous concert-grade audio</li>
             <li><i class="fa-solid fa-check text-amber-700 mr-2"></i> <strong>Live Music on the Move</strong> tuned specifically for dancing crowds</li>
@@ -2172,36 +2230,36 @@ body {
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 14px;">
         <div class="cost-sheet-container" style="margin-top:0;">
           <div class="cost-sheet-header" style="padding:16px 24px;">
-            <div class="cost-sheet-title" style="font-size:14.5px;"><i class="fa-solid fa-utensils text-amber-700"></i> Hot Finger Appetizers</div>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Recommended</span>
+            <div class="cost-sheet-title" style="font-size:15px;"><i class="fa-solid fa-utensils text-amber-700"></i> Hot Finger Appetizers</div>
+            <span style="font-size:12.5px; font-weight:700; color:var(--palm-green);">Recommended</span>
           </div>
           <table class="cost-sheet-table">
-            <tr><td>Paneer Tikka Achari & Hariyali Skewers</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Selection Item</td></tr>
-            <tr><td>Mini Veg Spring Rolls & Corn Cheese Balls</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Selection Item</td></tr>
-            <tr><td>Kathal Ki Tikki & Hara Bhara Kebab</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Selection Item</td></tr>
-            <tr><td>Mushroom & Corn Savory Tarts</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Selection Item</td></tr>
-            <tr><td>Mini Street Pao Bhaji Cones & Wada Pao Sliders</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Live Counter</td></tr>
+            <tr><td>Paneer Tikka Achari & Hariyali Skewers</td><td class="price" style="font-size:13px; color:var(--palm-green);">Selection Item</td></tr>
+            <tr><td>Mini Veg Spring Rolls & Corn Cheese Balls</td><td class="price" style="font-size:13px; color:var(--palm-green);">Selection Item</td></tr>
+            <tr><td>Kathal Ki Tikki & Hara Bhara Kebab</td><td class="price" style="font-size:13px; color:var(--palm-green);">Selection Item</td></tr>
+            <tr><td>Mushroom & Corn Savory Tarts</td><td class="price" style="font-size:13px; color:var(--palm-green);">Selection Item</td></tr>
+            <tr><td>Mini Street Pao Bhaji Cones & Wada Pao Sliders</td><td class="price" style="font-size:13px; color:var(--palm-green);">Live Counter</td></tr>
           </table>
         </div>
 
         <div class="cost-sheet-container" style="margin-top:0;">
           <div class="cost-sheet-header" style="padding:16px 24px;">
-            <div class="cost-sheet-title" style="font-size:14.5px;"><i class="fa-solid fa-glass-water text-amber-700"></i> Beverages & Coolers</div>
-            <span style="font-size:12px; font-weight:700; color:var(--palm-green);">Hydration Setup</span>
+            <div class="cost-sheet-title" style="font-size:15px;"><i class="fa-solid fa-glass-water text-amber-700"></i> Beverages & Coolers</div>
+            <span style="font-size:12.5px; font-weight:700; color:var(--palm-green);">Hydration Setup</span>
           </div>
           <table class="cost-sheet-table">
-            <tr><td>Fresh Tender Coconut Water with Straws</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Hydration Station</td></tr>
-            <tr><td>Spicy Kokum Cooler & Cucumber Basil Spritzer</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Premix Bottles</td></tr>
-            <tr><td>Virgin Mojito & Blue Lagoon Mocktails</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Bar Carts</td></tr>
-            <tr><td>Chilled Mineral Water & Soft Beverages</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">Continuous Service</td></tr>
-            <tr><td>Hotel Baraat Food Package</td><td class="price" style="font-size:12.5px; color:var(--palm-green);">On Selection</td></tr>
+            <tr><td>Fresh Tender Coconut Water with Straws</td><td class="price" style="font-size:13px; color:var(--palm-green);">Hydration Station</td></tr>
+            <tr><td>Spicy Kokum Cooler & Cucumber Basil Spritzer</td><td class="price" style="font-size:13px; color:var(--palm-green);">Premix Bottles</td></tr>
+            <tr><td>Virgin Mojito & Blue Lagoon Mocktails</td><td class="price" style="font-size:13px; color:var(--palm-green);">Bar Carts</td></tr>
+            <tr><td>Chilled Mineral Water & Soft Beverages</td><td class="price" style="font-size:13px; color:var(--palm-green);">Continuous Service</td></tr>
+            <tr><td>Hotel Baraat Food Package</td><td class="price" style="font-size:13px; color:var(--palm-green);">On Selection</td></tr>
           </table>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 23: COUPLE ENTRY — OPTION 01 (HIGH RES - INCLUDED IN PACKAGE) -->
+  <!-- SLIDE 23: COUPLE ENTRY — OPTION 01 (INCLUDED IN PACKAGE) -->
   <section class="slide" id="slide-23" data-day="Day 2 Entry" data-title="Entry Option 1: Lotus Arch">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -2236,7 +2294,7 @@ body {
     </div>
   </section>
 
-  <!-- SLIDE 24: COUPLE ENTRY — OPTION 02 (HIGH RES - INCLUDED IN PACKAGE) -->
+  <!-- SLIDE 24: COUPLE ENTRY — OPTION 02 (INCLUDED IN PACKAGE) -->
   <section class="slide" id="slide-24" data-day="Day 2 Entry" data-title="Entry Option 2: Mirrored Spiral">
     <div class="widescreen-grid">
       <div class="widescreen-left">
@@ -2528,15 +2586,15 @@ body {
         <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
           <div class="cost-sheet-header" style="padding:14px 20px;">
             <div>
-              <div class="cost-sheet-title" style="font-size:14.5px;">Logistics Fleet Commercials</div>
+              <div class="cost-sheet-title" style="font-size:15px;">Logistics Fleet Commercials</div>
               <div class="cost-sheet-subtitle">Airport & Station Movement</div>
             </div>
-            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹2,00,000</div>
+            <div style="font-family:'Cinzel',serif; font-size:17px; font-weight:800; color:var(--palm-green);">₹2,00,000</div>
           </div>
           <table class="cost-sheet-table">
             <tr>
-              <td style="padding:12px 20px;">Dedicated Pickups & Drops Fleet + Luggage Vans</td>
-              <td class="price" style="padding:12px 20px;">₹2,00,000</td>
+              <td style="padding:14px 20px;">Dedicated Pickups & Drops Fleet + Luggage Vans</td>
+              <td class="price" style="padding:14px 20px;">₹2,00,000</td>
             </tr>
           </table>
         </div>
@@ -2690,19 +2748,19 @@ body {
         <div class="cost-sheet-container" style="max-width:100%; margin-top:14px;">
           <div class="cost-sheet-header" style="padding:14px 20px;">
             <div>
-              <div class="cost-sheet-title" style="font-size:14.5px;">Welcome Hampers Commercials</div>
+              <div class="cost-sheet-title" style="font-size:15px;">Welcome Hampers Commercials</div>
               <div class="cost-sheet-subtitle">In-Room Gifting</div>
             </div>
-            <div style="font-family:'Cinzel',serif; font-size:16px; font-weight:800; color:var(--palm-green);">₹37,000</div>
+            <div style="font-family:'Cinzel',serif; font-size:17px; font-weight:800; color:var(--palm-green);">₹37,000</div>
           </div>
           <table class="cost-sheet-table">
             <tr>
-              <td style="padding:12px 20px;">Customized Monogrammed Tote Hampers with Treats</td>
-              <td class="price" style="padding:12px 20px;">₹37,000</td>
+              <td style="padding:14px 20px;">Customized Monogrammed Tote Hampers with Treats</td>
+              <td class="price" style="padding:14px 20px;">₹37,000</td>
             </tr>
             <tr>
-              <td style="padding:12px 20px;">Event Printing, Keycard Holders & Luggage Tags</td>
-              <td class="price" style="padding:12px 20px; font-family:'Plus Jakarta Sans',sans-serif; font-size:12px;">On Selection</td>
+              <td style="padding:14px 20px;">Event Printing, Keycard Holders & Luggage Tags</td>
+              <td class="price" style="padding:14px 20px; font-family:'Plus Jakarta Sans',sans-serif; font-size:13px;">On Selection</td>
             </tr>
           </table>
         </div>
@@ -2850,6 +2908,16 @@ body {
 <script>
 let currentSlide = 1;
 const totalSlides = 34;
+
+let carouselIndex = 0;
+function slideCarousel(dir) {
+  const track = document.getElementById('experienceTrack');
+  if (!track) return;
+  const cards = track.querySelectorAll('.carousel-card');
+  const maxIdx = Math.max(0, cards.length - 2);
+  carouselIndex = Math.max(0, Math.min(maxIdx, carouselIndex + dir));
+  track.style.transform = `translateX(-${carouselIndex * 280}px)`;
+}
 
 const slideData = [
   { no: 1, day: "Cover", title: "The Wedding Proposal" },
